@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
   </head>
+  <style>
+     header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+     header nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    aside ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    
+    }
+    ul li a:hover {
+      color: pink;
+    }
+    ul li {
+      list-style: none;
+      display: inline;
+    }
+  </style>
   <body>
     <header>
       <h1>Welcome to My Website</h1>
@@ -12,19 +47,19 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="costumers.html">Costumers</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
+      <section id="home">
         <h2>Main Content</h2>
         <article>
           <p>This is the main content of the page.</p>
         </article>
       </section>
     </main>
-    <aside>
+    <aside id="contact">
       <h3>Related Links</h3>
       <ul>
         <li><a href="#link1">Link 1</a></li>
@@ -32,7 +67,7 @@
       </ul>
     </aside>
 
-    <footer>
+    <footer id="About">
       <p>&copy; 2024 My Website</p>
     </footer>
   </body>
