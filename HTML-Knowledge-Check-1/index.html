@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 4 HTML Assignment</title>
+    <style>
+      /* Basic styling for radio buttons and labels */
+      .radio-group {
+        margin-bottom: 15px;
+      }
+
+      .radio-group label {
+        display: block; /* Make labels block-level for better spacing */
+        margin-bottom: 5px;
+      }
+      /* Style for radio button */
+      .radio-group input[type="radio"] {
+        margin-right: 5px; /* Add some spacing between the radio button and label text */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article></article>
+        <figure>
+          <img src="https://picsum.photos/200/300" alt="placeholder" />
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <h3>Contact Us</h3>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+          required placeholder="Enter your email" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Enter your message"> 
+
+        </textarea>
+        <button type="submit">Submit</button>
+        <div class="radio-group">
+          <label>How did you find us?</label>
+          <div>
+            <input  type="radio"  id="google"  name="find-us"  value="google"  checked />
+            <label for="google">Google</label>
+          </div>
+          <div>
+            <input type="radio" id="facebook" name="find-us" value="facebook"/>
+            <label for="facebook">Facebook</label>
+          </div>
+          <div>
+            <input type="radio" id="instagram" name="find-us"value="instagram"/>
+            <label for="instagram">Instagram</label>
+          </div>
+          <div>
+            <inpu type="radio" id="other"  name="find-us" value="other"/>
+            <label for="other">Other</label>
+          </div>
+        </div>
+        
+      </form>
+    </footer>
+  </body>
+</html>
