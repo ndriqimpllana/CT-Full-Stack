@@ -1,39 +1,73 @@
 body {
-    background-color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-
+  background-color: bisque;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 15px;
-    background-color: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-image: url(eventcenter.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+  margin: 20px;
+  color: black;
+  box-shadow: 5px 5px 5px gray;
 }
 
 #navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px gray;
+  
 }
 
 #navbar ul {
-    display: flex;
-    list-style: none;
-    
+  display: flex;
+  list-style: none;
 }
 
 #navbar ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 #site-logo {
-    
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 30px;
+}
+
+#site-footer {
+  font-weight: bold;
+  background-color: lightcoral;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+#welcome {
+  text-align: center;
+  padding: 40px 20px;
+
+  margin: 10px;
+  color: white;
+  border-radius: 70px;
+  background-image: url(concert.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 5px gray;
+}
+
+footer {
+
+border-radius: 40px;
 
 }
