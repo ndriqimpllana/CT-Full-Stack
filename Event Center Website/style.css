@@ -1,0 +1,39 @@
+body {
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: lightcoral;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+#navbar ul li {
+    margin: 0 10px;
+}
+
+#site-logo {
+    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+
+}
