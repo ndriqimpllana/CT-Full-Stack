@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Knowledge Check</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .member {
+        border-radius: 20px;
+        height: 300px;
+      }
+    </style>
   </head>
   <body>
     <!--Header where the site logo and the navigation bar are.-->
@@ -14,17 +21,18 @@
       <nav>
         <ul class="navbar">
           <li><a href="#home">Home</a></li>
-          <li><a href="#ourteam">Our Team</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact-us">Contact</a></li>
         </ul>
       </nav>
     </header>
     <!--Main Content-->
-    <main id="home">
+    <main id="about">
         <!--A little history about the company-->
       <section id="about-us">
         <article class="our-story">
+          <!--instead of a placeholder image i added a randomly generated image-->
+          <img src="https://picsum.photos/200/300" alt="" id="company-photo">
           <h1>Welcome to H&amp;S Consulting</h1>
           <pre id="our-history">
             H&amp;S Consulting: Family-owned and trusted since 1950.
@@ -33,84 +41,95 @@
             Our expertise spans finance, marketing, HR, technology, and more.
             Three generations of the Doe family have led our commitment to excellence.
             We adapt to change, but our core values of integrity and results remain constant.
-            Partner with H&amp;S Consulting - your legacy of success starts here.
+           <strong> Partner with H&amp;S Consulting - your legacy of success starts here. </strong>
           </pre>
         </article>
       </section>
+      <!--section with the team member information-->
       <section id="ourteam">
         <article id="members">
           <h2>Our Team</h2>
-          <div id="member-1">
+            <!--randomly generated images-->
+            <figure id="member-1">
             <img
               src="https://picsum.photos/200/300"
               alt="Person 1"
               width="200px"
-              height="200px"
+              height="200px" class="member"
             />
             <h3>John Doe</h3>
             <p>Marketing Specialist</p>
-          </div>
-          <div id="member-2">
+          </figure>
+          
+          <figure id="member-2">
             <img
               src="https://picsum.photos/200/300"
               alt="Person 2"
               width="200px"
-              height="200px"
+              height="200px" class="member"
             />
             <h3>Jane Doe</h3>
             <p>Finance Expert</p>
-          </div>
-          <div id="member-3">
+          </figure>
+          <figure id="member-3">
             <img
               src="https://picsum.photos/200/300"
               alt="Person 3"
               width="200px"
-              height="200px"
+              height="200px" class="member"
             />
             <h3>Evan Doe</h3>
             <p>Human Resources</p>
-          </div>
-          <div id="member-4">
+          </figure>
+          <figure id="member-4">
             <img
               src="https://picsum.photos/200/300"
               alt="Person 4"
               width="200px"
-              height="200px"
+              height="200px" class="member"
             />
             <h3>Emily Doe</h3>
             <p>Costumer Service</p>
-          </div>
+          </figure>
         </article>
       </section>
-      <section id="services">
+      <section >
         <table border="1">
           <caption>
-            Our Services
+            <h3 id="table-heading">Our Services</h3>
           </caption>
+          <!--the header row-->
           <tr>
-            <th>Service</th>
+            <th>Product Name</th>
             <th>Prices</th>
+            <th>Quantity</th>
           </tr>
+          <!--end of header row-->
           <tr>
             <td>Marketing</td>
             <td>$450</td>
+            <td>1 per week</td>
           </tr>
           <tr>
             <td>Finance</td>
             <td>$650</td>
+            <td>1 per week</td>
           </tr>
           <tr>
             <td>Human Resources</td>
             <td>$700</td>
+            <td>1 per week</td>
           </tr>
           <tr>
             <td>Costumer Service</td>
             <td>$350</td>
+            <td>1 per week</td>
           </tr>
         </table>
       </section>
       <aside id="survey"></aside>
     </main>
+    <!--the contact us form in the footer section-->
     <footer>
       <fieldset id="contact-us">
         <legend><h3>Contact Us</h3></legend>
@@ -137,6 +156,7 @@
           ></textarea>
           <button type="submit">Submit</button>
         </form>
+        <!--bonus radio buttons-->
         <div id="radio">
           <h3>Where did you hear about us?</h3>
           <form action="">
