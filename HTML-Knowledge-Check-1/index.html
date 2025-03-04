@@ -4,73 +4,169 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Knowledge Check</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--Header where the site logo and the navigation bar are.-->
     <header>
-      <a href="index.html" id="logo">H&amp;S Consulting</a>
-      <nav id="navbar">
-        <!-- Navigation Links -->
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <!--Site Logo-->
+      <a href="index.html" id="site-logo">H&amp;S Consulting</a>
+      <!--Navigation Bar-->
+      <nav>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#ourteam">Our Team</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Main Content -->
-    <main id="Home">
-      <section id="introduction">
-        <article id="who-we-are">
+    <!--Main Content-->
+    <main id="home">
+        <!--A little history about the company-->
+      <section id="about-us">
+        <article class="our-story">
           <h1>Welcome to H&amp;S Consulting</h1>
-          <p>
-            We are a consulting firm that specializes in helping small
-            businesses grow and succeed. Our team of experts can help you with
-            everything from marketing to finance to human resources. Contact us
-            today to learn more about how we can help your business thrive.
-          </p>
+          <pre id="our-history">
+            H&amp;S Consulting: Family-owned and trusted since 1950.
+            Founded by John Doe, we started with a simple mission: help businesses succeed.
+            We've grown from a local firm to a multi-faceted consultancy.
+            Our expertise spans finance, marketing, HR, technology, and more.
+            Three generations of the Doe family have led our commitment to excellence.
+            We adapt to change, but our core values of integrity and results remain constant.
+            Partner with H&amp;S Consulting - your legacy of success starts here.
+          </pre>
         </article>
       </section>
-      <h2 id="members">Our Team</h2>
-      <!-- Team Members -->
-      <section id="our-team">
-        <div id="team-member">
-          <img src="https://picsum.photos/200/300" alt="Person 1" />
-          <h3>Ndricim Pllana</h3>
-          <p>Marketing Specialist</p>
-        </div>
-        <div id="team-member">
-          <img src="https://picsum.photos/200/300" alt="Person 2" />
-          <h3>Maria Jose Leon</h3>
-          <p>Finance Expert</p>
-        </div>
-        <div id="team-member">
-          <img src="https://picsum.photos/200/300" alt="Person 3" />
-          <h3>Donat Pllana</h3>
-          <p>Human Resources Consultant</p>
-        </div>
+      <section id="ourteam">
+        <article id="members">
+          <h2>Our Team</h2>
+          <div id="member-1">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="Person 1"
+              width="200px"
+              height="200px"
+            />
+            <h3>John Doe</h3>
+            <p>Marketing Specialist</p>
+          </div>
+          <div id="member-2">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="Person 2"
+              width="200px"
+              height="200px"
+            />
+            <h3>Jane Doe</h3>
+            <p>Finance Expert</p>
+          </div>
+          <div id="member-3">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="Person 3"
+              width="200px"
+              height="200px"
+            />
+            <h3>Evan Doe</h3>
+            <p>Human Resources</p>
+          </div>
+          <div id="member-4">
+            <img
+              src="https://picsum.photos/200/300"
+              alt="Person 4"
+              width="200px"
+              height="200px"
+            />
+            <h3>Emily Doe</h3>
+            <p>Costumer Service</p>
+          </div>
+        </article>
       </section>
+      <section id="services">
+        <table border="1">
+          <caption>
+            Our Services
+          </caption>
+          <tr>
+            <th>Service</th>
+            <th>Prices</th>
+          </tr>
+          <tr>
+            <td>Marketing</td>
+            <td>$450</td>
+          </tr>
+          <tr>
+            <td>Finance</td>
+            <td>$650</td>
+          </tr>
+          <tr>
+            <td>Human Resources</td>
+            <td>$700</td>
+          </tr>
+          <tr>
+            <td>Costumer Service</td>
+            <td>$350</td>
+          </tr>
+        </table>
+      </section>
+      <aside id="survey"></aside>
     </main>
-    <aside id="About">
-      <div id="input-radio">
-        <h3 id="radio-title">Where did you hear about us ?</h3>
-        <div id="radio-buttons">
-          <label for="referral">Referral</label>
-          <input type="radio" name="referral" id="referral" value="referral" />
-          <label for="social-media">Social Media</label>
+    <footer>
+      <fieldset id="contact-us">
+        <legend><h3>Contact Us</h3></legend>
+        <form>
+          <label for="name">Name:</label>
           <input
-            type="radio"
-            name="referral"
-            id="social-media"
-            value="social-media"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
           />
-          <label for="other">Other</label>
-          <input type="radio" name="referral" id="other" value="other" />
-
-          <button type="submit" id="button">Submit</button>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your eamil"
+          />
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter your message"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="radio">
+          <h3>Where did you hear about us?</h3>
+          <form action="">
+            <label for="referral">Referral</label>
+            <input
+              type="radio"
+              name="radio"
+              id="referral"
+              value="referral"
+            />
+            <label for="social-media">Social Media</label>
+            <input
+              type="radio"
+              name="radio"
+              id="social-media"
+              value="social-media"
+            />
+            <label for="commercial">Commercial</label>
+            <input
+              type="radio"
+              name="radio"
+              id="commercial"
+              value="commercial"
+            />
+            <label for="other">Other</label>
+            <input type="radio" name="radio" id="other" value="other" />
+            <button type="submit">Submit</button>
+          </form>
         </div>
-      </div>
-    </aside>
-    <footer id="Contact"></footer>
+      </fieldset>
+    </footer>
   </body>
 </html>
