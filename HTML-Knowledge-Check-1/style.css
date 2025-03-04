@@ -7,11 +7,12 @@ body {
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     color: black;
     background-color: tomato;
-    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
   }
   
   #navbar a {
@@ -23,10 +24,13 @@ header {
   
   #navbar ul {
     display: flex;
+    align-items: flex-end;
     list-style: none;
   }
   
   #navbar ul li {
+    display: flex;
+    align-items: flex-end;
     margin: 0 10px;
   }
   
