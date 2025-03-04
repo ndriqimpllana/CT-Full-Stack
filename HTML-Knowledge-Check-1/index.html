@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Knowledge Check</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav></nav>
+      <a href="index.html" id="logo">H&amp;S Consulting</a>
+      <nav id="navbar">
+        <!-- Navigation Links -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-
+    <!-- Main Content -->
+    <main id="Home">
+      <section id="introduction">
+        <article id="who-we-are">
+          <h1>Welcome to H&amp;S Consulting</h1>
+          <p>
+            We are a consulting firm that specializes in helping small
+            businesses grow and succeed. Our team of experts can help you with
+            everything from marketing to finance to human resources. Contact us
+            today to learn more about how we can help your business thrive.
+          </p>
+        </article>
+      </section>
+      <h2 id="members">Our Team</h2>
+      <!-- Team Members -->
+      <section id="our-team">
+        <div id="team-member">
+          <img src="https://picsum.photos/200/300" alt="Person 1" />
+          <h3>Ndricim Pllana</h3>
+          <p>Marketing Specialist</p>
+        </div>
+        <div id="team-member">
+          <img src="https://picsum.photos/200/300" alt="Person 2" />
+          <h3>Maria Jose Leon</h3>
+          <p>Finance Expert</p>
+        </div>
+        <div id="team-member">
+          <img src="https://picsum.photos/200/300" alt="Person 3" />
+          <h3>Donat Pllana</h3>
+          <p>Human Resources Consultant</p>
+        </div>
+      </section>
     </main>
-    <aside>
+    <aside id="About">
+      <div id="input-radio">
+        <h3 id="radio-title">Where did you hear about us ?</h3>
+        <div id="radio-buttons">
+          <label for="referral">Referral</label>
+          <input type="radio" name="referral" id="referral" value="referral" />
+          <label for="social-media">Social Media</label>
+          <input
+            type="radio"
+            name="referral"
+            id="social-media"
+            value="social-media"
+          />
+          <label for="other">Other</label>
+          <input type="radio" name="referral" id="other" value="other" />
 
+          <button type="submit" id="button">Submit</button>
+        </div>
+      </div>
     </aside>
-    <footer>
-        
-    </footer>
-</body>
+    <footer id="Contact"></footer>
+  </body>
 </html>
