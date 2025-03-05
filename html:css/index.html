@@ -1,74 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-  </head>
-  <style>
-     header {
-      background-color: #f2f2f2;
-      padding: 20px;
-      text-align: center;
-    }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="about.html#about">About</a></li>
+      <li><a href="about.html#team">Team</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1>Welcome to our Home Page</h1>
+    <p>Intrudoction to the website and us</p>
+  </section>
+  <section id="services">
+    <h2>Services we provide.</h2>
+    <table border="1">
+      <tr>
+        <th>Services</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Washing</td>
+        <td>$150</td>
+        <td>2 times</td>
+      </tr>
+      <tr>
+        <td>Drying</td>
+        <td>$200</td>
+        <td>3 times</td>
+      </tr>
+      <tr>
+        <td>Frying</td>
+        <td>$50</td>
+        <td>Once</td>
+      </tr>
+    </table>
 
-    nav ul li {
-      list-style: none;
-    }
+  </section>
+  <section id="contact">
 
-     header nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
+    <fieldset>
+      <caption>Contact Us.</caption>
+      <form action="submit">
+        <label for="name" >Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+        <button type="submit"> Submit</button>
+      </form>
+    </fieldset>
 
-    nav ul li a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
-    aside ul li a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    
-    }
-    ul li a:hover {
-      color: pink;
-    }
-    ul li {
-      list-style: none;
-      display: inline;
-    }
-  </style>
-  <body>
-    <header>
-      <h1>Welcome to My Website</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="costumers.html">Costumers</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="home">
-        <h2>Main Content</h2>
-        <article>
-          <p>This is the main content of the page.</p>
-        </article>
-      </section>
-    </main>
-    <aside id="contact">
-      <h3>Related Links</h3>
-      <ul>
-        <li><a href="#link1">Link 1</a></li>
-        <li><a href="#link2">Link 2</a></li>
-      </ul>
-    </aside>
-
-    <footer id="About">
-      <p>&copy; 2024 My Website</p>
-    </footer>
-  </body>
+  </section>
+</body>
 </html>

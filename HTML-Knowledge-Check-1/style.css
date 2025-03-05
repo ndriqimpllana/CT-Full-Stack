@@ -10,6 +10,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
+  
 }
 
 #site-logo {
@@ -17,8 +18,7 @@ header {
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: auto;
-  margin-left: 20px;
+  margin-left: 40px;
   font-size: larger;
   font-weight: bold;
 }
@@ -28,6 +28,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   list-style: none;
+  margin-right: 30px;
 
 }
 
@@ -47,13 +48,9 @@ header {
 #about-us {
   display: flex;
   justify-content: center;
-  padding: 20px;
-  background-image: url("https://picsum.photos/200/300");
+  padding: 20px;  
   background-size: cover;
-  background-position: center;
-  
-
-  
+  background-position: center; 
 }
 
 .our-story  {
@@ -64,6 +61,7 @@ header {
   background-color: lightblue;
   align-items: center;
   border-radius: 20px;
+  width: 100%;
 }
 
 #company-photo {
@@ -156,6 +154,15 @@ footer {
   display: flex;
   justify-content: center;
   padding: 20px;
+  
+}
+legend {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  
 }
 
 
