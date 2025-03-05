@@ -13,15 +13,37 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+<form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+</form>
 
-    <section id="home">
+<p>Gender</p>
+<div>
+    <input type="radio" name="Gender" id="male" value="male">
+    <label for="male" style="margin-right: 20px;">Male</label>
 
-    </section>
-    <section id="about">
+    <input type="radio" name="Gender" id="female" value="female">
+    <label for="female" style="margin-right: 20px;">Female</label>
+</div>
 
-    </section>
-    <section id="contact">
+<p>Hobbies:</p>
+<div>
+    <input type="checkbox" name="Hobbies" id="reading" value="reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" name="Hobbies" id="gaming" value="gaming">
+    <label for="gaming">Gaming</label>
+</div>
 
-    </section>
+<label for="country">Country:</label>
+<select name="country" id="country">
+    <option value="japan">Japan</option>
+    <option value="china">China</option>
+    <option value="kosovo">Kosovo</option>
+</select>
+<label for="comments">Comments:</label>
+<textarea name="comments" id="comments" rows="4" cols="50"></textarea>
 </body>
 </html>
