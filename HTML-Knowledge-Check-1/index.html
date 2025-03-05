@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Knowledge Check</title>
     <link rel="stylesheet" href="style.css">
+    <!--simple styling just added rounded corners to some of the images that contain the class member-->
     <style>
+      
       .member {
-        border-radius: 20px;
+        border-radius: 20px; /* this property adds the rounded corners to the images containing member class */
         height: 300px;
       }
     </style>
@@ -50,34 +52,19 @@
         <article id="members">
           <h2>Our Team</h2>
             <!--randomly generated images-->
-            <figure id="member-1">
-            <img
-              src="https://picsum.photos/200/300"
-              alt="Person 1"
-              width="200px"
-              height="200px" class="member"
-            />
+          <figure id="member-1">
+            <img src="https://picsum.photos/200/300" alt="Person 1" width="200px" height="200px" class="member" />
             <h3>John Doe</h3>
             <p>Marketing Specialist</p>
           </figure>
           
           <figure id="member-2">
-            <img
-              src="https://picsum.photos/200/300"
-              alt="Person 2"
-              width="200px"
-              height="200px" class="member"
-            />
+            <img src="https://picsum.photos/200/300" alt="Person 2" width="200px" height="200px" class="member" />
             <h3>Jane Doe</h3>
             <p>Finance Expert</p>
           </figure>
           <figure id="member-3">
-            <img
-              src="https://picsum.photos/200/300"
-              alt="Person 3"
-              width="200px"
-              height="200px" class="member"
-            />
+            <img src="https://picsum.photos/200/300" alt="Person 3" width="200px" height="200px" class="member"/>
             <h3>Evan Doe</h3>
             <p>Human Resources</p>
           </figure>
@@ -133,57 +120,28 @@
     <footer>
       <fieldset id="contact-us">
         <legend><h3>Contact Us</h3></legend>
-        <form>
+        <form action="#">
           <label for="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-          />
+          <input type="text" name="name" id="name" placeholder="Enter your name" required/>
           <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter Your eamil"
-          />
+          <input type="email" name="email" id="email" placeholder="Enter Your eamil" required/>
           <label for="message">Message</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Enter your message"
-          ></textarea>
+          <textarea name="message" id="message" placeholder="Enter your message"></textarea>
           <button type="submit">Submit</button>
         </form>
         <!--bonus radio buttons-->
         <div id="radio">
           <h3>Where did you hear about us?</h3>
-          <form action="">
+          <form action="#">
+            <input type="radio" name="radio" id="referral" value="referral"/>
             <label for="referral">Referral</label>
-            <input
-              type="radio"
-              name="radio"
-              id="referral"
-              value="referral"
-            />
+            <input type="radio" name="radio" id="social-media" value="social-media"/>
             <label for="social-media">Social Media</label>
-            <input
-              type="radio"
-              name="radio"
-              id="social-media"
-              value="social-media"
-            />
+            <input type="radio" name="radio" id="commercial" value="commercial" />
             <label for="commercial">Commercial</label>
-            <input
-              type="radio"
-              name="radio"
-              id="commercial"
-              value="commercial"
-            />
-            <label for="other">Other</label>
             <input type="radio" name="radio" id="other" value="other" />
-            <button type="submit">Submit</button>
+            <label for="other">Other</label>
+            <input type="submit" value="send">
           </form>
         </div>
       </fieldset>
