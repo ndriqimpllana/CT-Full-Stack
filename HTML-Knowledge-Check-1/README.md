@@ -18,6 +18,11 @@ Created a table that has a breakdown of the services they offer and the prices p
 Then finally within the footer i added a contact form and a quick survey with radio buttons. 
 
 
+The css file i included it might not be as clear but since i only have some basic knowledge in it i still wanted to implement what i know
+
+
+
+
 
 
 
