@@ -9,5 +9,16 @@ Then i added and image and some preformated text to have a brief history about t
 
 I then used the <style> attribute to add some basic style to the images and i left one of the images not styled.
 
+I used semantic elements throughout the page to nest elements in like <section>, <header>, <nav>, <figure> to name a few.
+
+Created a team/members section with images neseted inside <figure> elements
+
+Created a table that has a breakdown of the services they offer and the prices per quantity. With the respectable table headers.
+
+Then finally within the footer i added a contact form and a quick survey with radio buttons. 
+
+
+
+
 
 

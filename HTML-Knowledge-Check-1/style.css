@@ -5,9 +5,9 @@ html {
 }
 
 header {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
+  background-color: black; /* setting the backgrounc color of the header */
+  display: flex; /*displays elements in a row */
+  justify-content: space-between; /* sets an equal space between the elements */
   align-items: center;
   border-radius: 10px;
   
@@ -51,6 +51,7 @@ header {
   padding: 20px;  
   background-size: cover;
   background-position: center; 
+  
 }
 
 .our-story  {
@@ -79,7 +80,7 @@ header {
 #ourteam h2 {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*allows elements to wrap into the next line based on screen size */
   color: black;
   margin-bottom: 20px;
   font-size: 2rem;
@@ -89,25 +90,23 @@ header {
 
 #members {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between; 
 }
 
 #members figure {
   padding: 20px;
   text-align: center;
-  width: 250px; /*set a fix with*/
 }
 
 #members img.member {
  
   border-radius: 30px;
   padding: 20px;
-  margin-bottom: 10px;
+  
 }
 
 #members h3 {
-  color: #333;
   margin-bottom: 5px;
 }
 
@@ -135,6 +134,7 @@ caption,
   color: black;
   font-size: 2rem;
   padding: 20px;
+  margin: auto;
   justify-content: center;
 }
 
@@ -154,16 +154,56 @@ footer {
   display: flex;
   justify-content: center;
   padding: 20px;
+  flex-direction: column;
   
 }
-legend {
+fieldset {
   display: flex;
-  align-items: center;
+  border-width: 3px;
+  border-color: black;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+legend  {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
   
 }
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#contact-us form {
+  display: flex;
+  margin: auto;
+  
+
+}
+
+#radio-buttons {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  border-color: black;
+}
+
+button {
+  background-color: lightskyblue;
+  padding: 10px;
+  border-radius: 30px;
+  width: 70px;
+  margin: auto;
+}
+
+
+
 
 
 

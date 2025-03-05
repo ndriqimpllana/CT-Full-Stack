@@ -12,6 +12,12 @@
         border-radius: 20px; /* this property adds the rounded corners to the images containing member class */
         height: 300px;
       }
+      #table-heading {
+        color: salmon;
+      }
+      table {
+        border-color: salmon;
+      }
     </style>
   </head>
   <body>
@@ -70,11 +76,7 @@
           </figure>
           <figure id="member-4">
             <img
-              src="https://picsum.photos/200/300"
-              alt="Person 4"
-              width="200px"
-              height="200px" class="member"
-            />
+              src="https://picsum.photos/200/300" alt="Person 4" width="200px" height="200px" class="member"/>
             <h3>Emily Doe</h3>
             <p>Costumer Service</p>
           </figure>
@@ -85,13 +87,12 @@
           <caption>
             <h3 id="table-heading">Our Services</h3>
           </caption>
-          <!--the header row-->
+          <!--table header row-->
           <tr>
             <th>Product Name</th>
             <th>Prices</th>
             <th>Quantity</th>
           </tr>
-          <!--end of header row-->
           <tr>
             <td>Marketing</td>
             <td>$450</td>
@@ -114,37 +115,37 @@
           </tr>
         </table>
       </section>
-      <aside id="survey"></aside>
     </main>
     <!--the contact us form in the footer section-->
     <footer>
       <fieldset id="contact-us">
-        <legend><h3>Contact Us</h3></legend>
+        <legend id="contact-form">Contact Us</legend>
         <form action="#">
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" placeholder="Enter your name" required/>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter Your eamil" required/>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+          <label for="name">Name:</label> <br>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required/> <br>
+          <label for="email">Email:</label> <br>
+          <input type="email" name="email" id="email" placeholder="Enter you email" required/> <br>
+          <label for="message">Message:</label> <br>
+          <textarea name="message" id="message" placeholder="Enter your message" rows="4" cols="40"></textarea><br>
           <button type="submit">Submit</button>
         </form>
+      </fieldset>
         <!--bonus radio buttons-->
-        <div id="radio">
-          <h3>Where did you hear about us?</h3>
+        <fieldset id="radio-buttons">
+          <legend>Where did you hear about us?</legend>
           <form action="#">
             <input type="radio" name="radio" id="referral" value="referral"/>
-            <label for="referral">Referral</label>
+            <label for="referral">Referral</label> <br>
             <input type="radio" name="radio" id="social-media" value="social-media"/>
-            <label for="social-media">Social Media</label>
+            <label for="social-media">Social Media</label> <br>
             <input type="radio" name="radio" id="commercial" value="commercial" />
-            <label for="commercial">Commercial</label>
+            <label for="commercial">Commercial</label> <br>
             <input type="radio" name="radio" id="other" value="other" />
-            <label for="other">Other</label>
-            <input type="submit" value="send">
+            <label for="other">Other</label><br>
+            <button type="submit">Submit</button>
+          
           </form>
-        </div>
-      </fieldset>
+        </fieldset>
     </footer>
   </body>
 </html>
