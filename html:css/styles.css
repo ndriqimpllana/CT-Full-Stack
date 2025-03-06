@@ -1,27 +1,80 @@
 h1 {
     color: salmon;
     font-style: italic;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: auto;
 }
 
 ul {
-    list-style-type: none;
-    display: inline;
-    display: flex;
     
+    list-style-type: none;
+    display: flex;
     justify-content: flex-end;
-}
-li {
-    padding: 10px;
+
+
 }
 
 a {
-    color: lightcoral;
     text-decoration: none;
+    color: black;
 }
 
-div > p /* direct child selector- parent > child  */
+li {
+    display: flex;
+    padding: 20px;
 
-div p /* Descendant(all children under the div that have the p tag) Selector - ancestor descendant*/
+}
 
-div, p /* multiple element selector */
+h1 {
+    color: salmon;
+    font-style: italic;
+}
+
+p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    border-radius: 20px;
+    background-color: salmon;
+    padding: 20px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-color: green;
+    border-width: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+table tr th td {
+    display: flex;
+    justify-content: center;
+    border-color: green;
+    
+}
+
+tr th td {
+    display: flex;
+    border-width: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+fieldset form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
 
