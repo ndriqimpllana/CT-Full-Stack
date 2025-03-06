@@ -1,0 +1,20 @@
+h1 {
+    color: salmon;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    display: flex;
+    
+    justify-content: flex-end;
+}
+li {
+    padding: 10px;
+}
+
+a {
+    color: lightcoral;
+    text-decoration: none;
+}
