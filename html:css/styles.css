@@ -68,7 +68,6 @@ tr th td {
 }
 fieldset {
     display: flex;
-    justify-content: space-between;
 }
 fieldset form {
     display: flex;
