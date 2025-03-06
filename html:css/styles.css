@@ -89,3 +89,11 @@ body {
     font-weight: bold;
 }
 
+#services table {
+    
+    
+    grid-area: auto;
+    width: 100%;
+    display: grid;
+
+}
