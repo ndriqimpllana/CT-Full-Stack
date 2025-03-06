@@ -18,3 +18,10 @@ a {
     color: lightcoral;
     text-decoration: none;
 }
+
+div > p /* direct child selector- parent > child  */
+
+div p /* Descendant(all children under the div that have the p tag) Selector - ancestor descendant*/
+
+div, p /* multiple element selector */
+
