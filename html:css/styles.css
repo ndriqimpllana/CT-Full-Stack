@@ -77,3 +77,14 @@ fieldset form {
     margin-top: 20px;
 }
 
+body {
+    background-color: bisque;
+    padding: 30px;
+    
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+}
