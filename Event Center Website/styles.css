@@ -6,7 +6,38 @@
 }
 
 
-body {
+html {
 
   background-color: var(--main-color);
+}
+#home {
+  background-color: hsl(100, 0, 0);
+  border: solid 2px black;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#site-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 3rem;
 }
