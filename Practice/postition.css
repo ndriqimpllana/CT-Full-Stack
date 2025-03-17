@@ -81,5 +81,15 @@
     background-color: moccasin;
     overflow: hidden scroll;
 }
+@keyframes fedeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.static_position, .relative_position, .absolute_position, .fixed_position, .block-inline, .sticky_position, .absolute_container {
 
-
+    animation: fedeIn 2s ease-in-out;
+}
