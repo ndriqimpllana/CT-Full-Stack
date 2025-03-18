@@ -7,24 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header id="contact-us">
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html#home">Home</a>
-            </li>
-            <li>
-              <a href="events.html#events">Events</a>
-            </li>
-            <li>
-              <a href="location.html#location">Location</a>
-            </li>
-            <li>
-              <a href="#contact-us">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="index.html">New York Venues</a>
-      </header>
+  <header class="navigation-bar">
+    <div class="site-logo">
+      <a href="index.html" class="site-logo">NYVC</a>
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="events.html">Events</a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="location.html">Location</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form action="submit">
+      <label for="fullname">Name:</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name" required> <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Enter Your Email" required> <br>
+      <label for="message">Message</label>
+      <textarea name="message" id="mesagge" rows="10" cols="40" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
 </body>
 </html>
