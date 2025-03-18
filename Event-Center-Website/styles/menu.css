@@ -1,7 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-}
+
 .navigation-bar {
   background-color: black;
   color: white;
@@ -37,12 +34,10 @@ body {
 }
 #nav-bar a:hover {
   background-color: lightblue;
+  border-radius: 5px;
 }
 .site-logo:hover {
   transition: background-color 0.5s ease;
   background-color: lightblue;
+  
 }
-
-
-
-
