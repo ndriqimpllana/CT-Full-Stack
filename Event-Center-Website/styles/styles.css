@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: lightblue;
 }
 .navigation-bar {
   background-color: black;
@@ -75,7 +75,9 @@ figure h1 {
   font-size: 2rem;
   text-shadow: 2px 2px 4px hsl(40, 0, 20);
   margin: 0;
-  color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 4rem;
 }
 
 figure p {
@@ -83,32 +85,48 @@ figure p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 35px;
-  font-size: 1.2rem;
-  color: white;
+  margin-top: 50px;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
 }
 
 .main-content {
   display: flex;
-  justify-content: space-between;
   padding: 10px;
 }
 
-.about-us {
-  color: white;
-  text-align: center;
-  border: 2px solid white;
- 
+.future-events img {
+  border-radius: 10px;
+  box-shadow: 4px 4px hsl(20, 0, 40);
   
+}
+
+.future-events a {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  transition: background-color 0.5 ease;
+}
+
+.future-events a:hover {
+  background-color: black;
+  color: white;
+}
+
+#card-one {
+  display: flex;
+  justify-content: space-around;
   flex: 1;
 }
 
-.future-events {
+#card-two {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 30px;
 }
 
-
-
+#card-three {
+  display: flex;
+}

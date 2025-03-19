@@ -40,3 +40,33 @@
   transition: background-color 0.5s ease;
   background-color: lightblue;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: lightblue;
+    justify-content: center;
+    padding: 30px;
+    margin: auto;
+    width: 50%;
+    align-items: center;
+    margin-top: 30px;
+    flex: 1;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+legend {
+    margin: auto;
+    font-size: 2rem;
+    margin-top: 15px;
+    padding: 15px;
+    text-decoration: underline;
+    
+}
