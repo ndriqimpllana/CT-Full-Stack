@@ -42,7 +42,7 @@
 }
 
 form {
-    display: flex;
+    display: grid;
     flex-direction: column;
     border-radius: 15px;
     background-color: lightblue;
@@ -53,6 +53,7 @@ form {
     align-items: center;
     margin-top: 30px;
     flex: 1;
+    border: none;
 }
 
 fieldset {
@@ -60,6 +61,9 @@ fieldset {
     display: flex;
     width: 50%;
     margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 legend {
@@ -69,4 +73,28 @@ legend {
     padding: 15px;
     text-decoration: underline;
     
+}
+
+button {
+    size: 40px;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: rgb(9, 122, 234);
+    color: white;
+    font-weight: bold;
+
+}
+
+form {
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }

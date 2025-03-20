@@ -11,7 +11,8 @@ body {
   align-items: center;
   padding: 10px;
   margin: 0;
-  
+  position: sticky;
+  flex-wrap: wrap;
 }
 
 .site-logo {
@@ -27,6 +28,7 @@ body {
   margin: 0;
   padding: 0;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 #nav-bar a {
@@ -46,10 +48,12 @@ body {
 }
 
 .banner-section {
+  display: flex;
   width: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
   
 }
 
