@@ -1,0 +1,36 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: sticky;
+  
+}
+.site-header > a {
+  text-decoration: none;
+  color: white;
+  margin: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.navbar > ul {
+  padding-right: 15px;
+}
+.navbar ul li {
+  list-style: none;
+  
+}
