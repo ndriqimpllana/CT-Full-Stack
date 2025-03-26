@@ -1,10 +1,16 @@
+:root {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 96%);
+}
+
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: black;
   color: white;
-  position: sticky;
+  flex-wrap: wrap;
   
 }
 .site-header > a {
@@ -20,6 +26,7 @@
   gap: 20px;
   margin-right: 10px;
   color: white;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -33,4 +40,30 @@
 .navbar ul li {
   list-style: none;
   
+}
+
+ .banner  {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: hsl(146, 71%, 34%);
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.events-header {
+  display: flex;
+  align-self: center;
+}
+
+.event-cards {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  border-radius: 10px;
+  padding: 20px;
 }
