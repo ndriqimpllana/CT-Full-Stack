@@ -11,6 +11,8 @@
   background-color: black;
   color: white;
   flex-wrap: wrap;
+  margin: 0;
+  border-radius: 10px;
   
 }
 .site-header > a {
@@ -42,18 +44,10 @@
   
 }
 
- .banner  {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid black;
-  padding: 15px;
-  margin-top: 15px;
-  background-color: hsl(146, 71%, 34%);
-  border-radius: 10px;
-  color: white;
-  align-items: center;
-  flex-wrap: wrap;
-}
+ .banner {
+  height: 100px;
+  width: 150px;
+ }
 
 .events-header {
   display: flex;
@@ -66,4 +60,34 @@
   box-shadow: 5px 5px 5px 5px lightgray;
   border-radius: 10px;
   padding: 20px;
+  margin: 15px;
+}
+
+.event-cards .event {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px 5px lightgray;
+  border-radius: 10px;
+  padding: 14px;
+  justify-content: space-around;
+}
+.event img {
+  border-radius: 10px;
+}
+
+.event a {
+  text-decoration: none;
+  color: black;
+  border: solid black 1px;
+  text-align: center;
+  border-radius: 14px;
+  color: white;
+  background-color: rgb(115, 185, 209);
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  
 }
