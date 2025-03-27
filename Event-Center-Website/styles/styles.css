@@ -44,9 +44,9 @@
   
 }
 
- .banner {
-  height: 100px;
-  width: 150px;
+ .banner > img {
+  height: 500px;
+  width: 100%;
  }
 
 .events-header {
@@ -85,9 +85,58 @@
   background-color: rgb(115, 185, 209);
 }
 footer {
+  position: fixed;
   background-color: black;
   color: white;
   text-align: center;
   padding: 12px;
+  
+}
+
+
+
+
+
+
+
+/* Contact us page styling */
+
+.contact-form {
+ padding: 25px;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  border-radius: 20px;
+  width: 50%;
+  height: 100%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 10px;
+}
+
+legend {
+  margin: auto;
+  padding: 15px;
+  font-size: 2rem;
+  background-color: lightblue;
+  border-radius: 12px;
+}
+
+
+.submit-button {
+  background-color: lightcoral;
+  padding: 15px;
+  transition: width 0.5s, height 0.5s, background-color 0.5s;
+  border-radius: 10px;
+}
+
+.submit-button:hover {
+  background-color: lightsalmon;
   
 }
