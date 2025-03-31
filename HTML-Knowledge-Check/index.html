@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Knowledge Check</title>
+    <link rel="stylesheet" href="style.css">
+    <!--simple styling just added rounded corners to some of the images that contain the class member-->
+    <style>
+      
+      .member {
+        border-radius: 20px; /* this property adds the rounded corners to the images containing member class */
+        height: 300px;
+      }
+      #table-heading {
+        color: salmon;
+      }
+      table {
+        border-color: salmon;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header where the site logo and the navigation bar are.-->
+    <header>
+        <!--Site Logo-->
+      <a href="index.html" id="site-logo">H&amp;S Consulting</a>
+      <!--Navigation Bar-->
+      <nav>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main Content-->
+    <main id="about">
+        <!--A little history about the company-->
+      <section id="about-us">
+        <article class="our-story">
+          <!--instead of a placeholder image i added a randomly generated image-->
+          <img src="https://picsum.photos/200/300" alt="" id="company-photo">
+          <h1>Welcome to H&amp;S Consulting</h1>
+          <pre id="our-history">
+            H&amp;S Consulting: Family-owned and trusted since 1950.
+            Founded by John Doe, we started with a simple mission: help businesses succeed.
+            We've grown from a local firm to a multi-faceted consultancy.
+            Our expertise spans finance, marketing, HR, technology, and more.
+            Three generations of the Doe family have led our commitment to excellence.
+            We adapt to change, but our core values of integrity and results remain constant.
+           <strong> Partner with H&amp;S Consulting - your legacy of success starts here. </strong>
+          </pre>
+        </article>
+      </section>
+      <!--section with the team member information-->
+      <section id="ourteam">
+        <article id="members">
+          <h2>Our Team</h2>
+            <!--randomly generated images-->
+          <figure id="member-1">
+            <img src="https://picsum.photos/200/300" alt="Person 1" width="200px" height="200px" class="member" />
+            <h3>John Doe</h3>
+            <p>Marketing Specialist</p>
+          </figure>
+          
+          <figure id="member-2">
+            <img src="https://picsum.photos/200/300" alt="Person 2" width="200px" height="200px" class="member" />
+            <h3>Jane Doe</h3>
+            <p>Finance Expert</p>
+          </figure>
+          <figure id="member-3">
+            <img src="https://picsum.photos/200/300" alt="Person 3" width="200px" height="200px" class="member"/>
+            <h3>Evan Doe</h3>
+            <p>Human Resources</p>
+          </figure>
+          <figure id="member-4">
+            <img
+              src="https://picsum.photos/200/300" alt="Person 4" width="200px" height="200px" class="member"/>
+            <h3>Emily Doe</h3>
+            <p>Costumer Service</p>
+          </figure>
+        </article>
+      </section>
+      <section >
+        <table border="1">
+          <caption>
+            <h3 id="table-heading">Our Services</h3>
+          </caption>
+          <!--table header row-->
+          <tr>
+            <th>Product Name</th>
+            <th>Prices</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td>Marketing</td>
+            <td>$450</td>
+            <td>1 per week</td>
+          </tr>
+          <tr>
+            <td>Finance</td>
+            <td>$650</td>
+            <td>1 per week</td>
+          </tr>
+          <tr>
+            <td>Human Resources</td>
+            <td>$700</td>
+            <td>1 per week</td>
+          </tr>
+          <tr>
+            <td>Costumer Service</td>
+            <td>$350</td>
+            <td>1 per week</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <!--the contact us form in the footer section-->
+    <footer>
+      <fieldset id="contact-us">
+        <legend id="contact-form">Contact Us</legend>
+        <form action="#">
+          <label for="name">Name:</label> <br>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required/> <br>
+          <label for="email">Email:</label> <br>
+          <input type="email" name="email" id="email" placeholder="Enter you email" required/> <br>
+          <label for="message">Message:</label> <br>
+          <textarea name="message" id="message" placeholder="Enter your message" rows="4" cols="40"></textarea><br>
+          <button type="submit">Submit</button>
+        </form>
+      </fieldset>
+        <!--bonus radio buttons-->
+        <fieldset id="radio-buttons">
+          <legend>Where did you hear about us?</legend>
+          <form action="#">
+            <input type="radio" name="radio" id="referral" value="referral"/>
+            <label for="referral">Referral</label> <br>
+            <input type="radio" name="radio" id="social-media" value="social-media"/>
+            <label for="social-media">Social Media</label> <br>
+            <input type="radio" name="radio" id="commercial" value="commercial" />
+            <label for="commercial">Commercial</label> <br>
+            <input type="radio" name="radio" id="other" value="other" />
+            <label for="other">Other</label><br>
+            <button type="submit">Submit</button>
+          
+          </form>
+        </fieldset>
+    </footer>
+  </body>
+</html>

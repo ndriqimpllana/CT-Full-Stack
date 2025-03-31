@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning about Navbar and HTML Forms</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+    </form>
+
+    <p>Gender</p>
+    <div>
+      <input type="radio" name="Gender" id="male" value="male" />
+      <label for="male" style="margin-right: 20px">Male</label>
+
+      <input type="radio" name="Gender" id="female" value="female" />
+      <label for="female" style="margin-right: 20px">Female</label>
+    </div>
+
+    <p>Hobbies:</p>
+    <div>
+      <input type="checkbox" name="Hobbies" id="reading" value="reading" />
+      <label for="reading">Reading</label>
+      <input type="checkbox" name="Hobbies" id="gaming" value="gaming" />
+      <label for="gaming">Gaming</label>
+    </div>
+
+    <label for="country">Country:</label>
+    <select name="country" id="country">
+      <option value="japan">Japan</option>
+      <option value="china">China</option>
+      <option value="kosovo">Kosovo</option>
+    </select>
+    <label for="comments">Comments:</label>
+    <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+    <input type="submit" name="submit" id="submit" value="submit" />
+    <label for="Quantity">Quantity</label>
+    <input type="number" name="Quantity" id="Quantity" min="1" max="25" />
+    <label for="birthday">Birthdate</label>
+    <input type="date" name="birthdate" id="birthdate" />
+    <fieldset>
+        <legend>Contact US</legend>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email">
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required placeholder="write your message"></textarea>
+            <input type="submit" value="send">
+        </form>
+    </fieldset><br><br><hr><br><br>
+   
+        <form action="#" method="post">
+            <fieldset style="border-color: red;">
+                <legend style="margin: auto; font-weight: bolder; color: lightcoral; font-size: 2rem;" >Survey</legend>
+            <fieldset>
+                <legend>Personal Info</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required> <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required><br><br>
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" name="birthdate" id="birthdate" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Preferred Season</legend>
+            
+            <input type="radio" name="seasons" id="Autumn">
+            <label for="autumn">Autumn</label><br><br>
+            <input type="radio" name="seasons" id="Summer">
+            <label for="Summer">Summer</label><br><br>
+            <input type="radio" name="seasons" id="winter">
+            <label for="winter">Winter</label><br><br>
+            <input type="radio" name="seasons" id="spring">
+            <label for="spring">Spring</label>
+        </fieldset>
+        <fieldset>
+            <legend style="margin: auto;">Hobbies</legend>
+            <input type="checkbox" name="" id="">
+            <label for="Hobbies">Singing</label> <br><br>
+            <input type="checkbox" name="" id="">
+            <label for="futball">Football</label><br><br>
+            <input type="checkbox" name="" id="">
+            <label for="cricket">Cricket</label><br><br>
+        </fieldset>
+        <label for="message">Your message:</label><br><br>
+        <textarea name="message" id="message" placeholder="Write your message"></textarea> <br><br>
+        <input type="submit" style="margin: auto;">
+    </fieldset>
+        </form>
+    
+  </body>
+</html>

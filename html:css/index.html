@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Store</a></li>
+      <li><a href="about.html#about">About</a></li>
+      <li><a href="about.html#team">Team</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1>Welcome to our Home Page</h1>
+    <p>Introduction to the website and us</p>
+  </section>
+  <section id="services">
+    <h2>Services we provide.</h2>
+    <table border="1">
+      <tr>
+        <th>Services</th>
+        <th>Price</th>
+        <th>Quantity</th>
+      </tr>
+      <tr>
+        <td>Washing</td>
+        <td>$150</td>
+        <td>2 times</td>
+      </tr>
+      <tr>
+        <td>Drying</td>
+        <td>$200</td>
+        <td>3 times</td>
+      </tr>
+      <tr>
+        <td>Frying</td>
+        <td>$50</td>
+        <td>Once</td>
+      </tr>
+    </table>
+
+  </section>
+  <section id="contact">
+
+    <fieldset style="">
+      <legend>Contact Us.</legend>
+      <form action="submit">
+        <label for="name" >Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <label for="your-message">Enter Your Message:</label>
+        <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+        <button type="submit"> Submit</button>
+      </form>
+    </fieldset>
+
+  </section>
+</body>
+</html>

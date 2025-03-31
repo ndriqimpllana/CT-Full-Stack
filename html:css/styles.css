@@ -1,0 +1,99 @@
+h1 {
+    color: salmon;
+    font-style: italic;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: auto;
+}
+
+ul {
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    display: flex;
+    padding: 20px;
+
+}
+
+h1 {
+    color: salmon;
+    font-style: italic;
+}
+
+p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    border-radius: 20px;
+    background-color: salmon;
+    padding: 20px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-color: green;
+    border-width: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+table tr th td {
+    display: flex;
+    justify-content: center;
+    border-color: green;
+    
+}
+
+tr th td {
+    display: flex;
+    border-width: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+fieldset {
+    display: flex;
+}
+fieldset form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+body {
+    background-color: bisque;
+    padding: 30px;
+    
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+#services table {
+    
+    
+    grid-area: auto;
+    width: 100%;
+    display: grid;
+
+}
