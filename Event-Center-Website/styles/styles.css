@@ -1,8 +1,8 @@
-.navigation-bar {
+.site-header {
   background-color: black;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   margin: 0;
@@ -16,7 +16,7 @@
   text-decoration: none;
 }
 
-#nav-bar ul {
+.navbar ul {
   list-style: none;
   display: flex;
   margin: 0;
@@ -24,14 +24,14 @@
   gap: 20px;
 }
 
-#nav-bar a {
+.navbar a {
   color: white;
   text-decoration: none;
   padding: 10px;
   transition: background-color 0.5s ease;
   
 }
-#nav-bar a:hover {
+.navbar a:hover {
   background-color: lightblue;
   border-radius: 5px;
 }
