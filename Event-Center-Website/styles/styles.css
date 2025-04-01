@@ -1,29 +1,99 @@
+/* Basic Navbar Styles */
 .site-header {
   background-color: black;
-  color: white;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  margin: 0;
+  position: relative;
   
 }
 
 .site-logo {
-  font-size: 2rem;
-  font-weight: bold;
   color: white;
   text-decoration: none;
-  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 .navbar ul {
-  list-style: none;
   display: flex;
-  margin: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   padding: 0;
-  gap: 20px;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-right: 0  20px;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+/* Hamburger style menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
+}
+  /* Hide the checkbox */
+.menu-checkbox {
+  display: none;
+}
+  /* Media Query for smaller screens */
+@media screen and (max-width: 700px) {
+  .navbar {
+      position:absolute;
+      top: 100%; /* positioning below header */
+      left: 0;
+      width: 100%;
+      background-color: black;
+      z-index: 1; /* Ensure it's on top */
+  }
+
+  .navbar ul {
+      display: none;
+      flex-direction: column;
+  }
+
+  .navbar ul li {
+      text-align: center;
+      margin: 15px 0;
+  }
+
+  .hamburger {
+      display:block;
+
+  }
+  /* Show menu when the checkbox is checked */
+  #menu-toggle:checked + .hamburger + .navbar ul {
+      display: flex;
+  }
+  /* toggle menu animation */
+  #menu-toggle:checked + .hamburger + .bar:nth-child(2) {
+      opacity: 0;
+  }
+  #menu-toggle:checked + .hamburger + .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+  #menu-toggle:checked + .hamburger + .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
 }
 
 .navbar a {
