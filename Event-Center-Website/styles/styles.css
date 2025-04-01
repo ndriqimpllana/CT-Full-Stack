@@ -80,18 +80,22 @@
       display:block;
 
   }
+
   /* Show menu when the checkbox is checked */
   #menu-toggle:checked + .hamburger + .navbar ul {
       display: flex;
   }
+
   /* toggle menu animation */
-  #menu-toggle:checked + .hamburger + .bar:nth-child(2) {
+  #menu-toggle:checked + .hamburger  .bar:nth-child(2) {
       opacity: 0;
   }
-  #menu-toggle:checked + .hamburger + .bar:nth-child(1) {
+
+  #menu-toggle:checked + .hamburger .bar:nth-child(1) {
       transform: translateY(8px) rotate(45deg);
   }
-  #menu-toggle:checked + .hamburger + .bar:nth-child(3) {
+
+  #menu-toggle:checked + .hamburger .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
   }
 }
@@ -107,7 +111,10 @@
   background-color: lightblue;
   border-radius: 5px;
 }
+/*
 .site-logo:hover {
   transition: background-color 0.5s ease;
   background-color: lightblue;
 }
+
+*/
