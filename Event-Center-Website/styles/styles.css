@@ -211,12 +211,129 @@
 /* Events page Styling */
 
 
+/* Existing CSS (keep this) */
+/* ... */
 
+/* Events Page Styles */
+.events-page {
+  padding: 20px;
+  width: 100%;
+}
+
+.header-events {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.events-cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Consolidated event card styles */
+.events-cards article {
+  display: flex; /* Flexbox for image/text layout */
+  width: 100%; /* Full width within container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  margin-bottom: 20px;
+  overflow: hidden; 
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.events-cards img {
+  width: 150px; /* Fixed width for the image */
+  height: auto;
+  object-fit: cover; 
+  border-radius: 20px;/* Ensure image fills the space */
+}
+
+.events-cards .event-content {
+  padding: 15px;
+  flex: 1; /* Allow content to grow */
+}
+
+.events-cards h3 {
+  margin: auto;
+}
+
+.events-cards p {
+  color: #555;
+  font-size: 0.9em;
+  margin: auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .events-cards article {
+    flex-direction: column; /* Stack on small screens */
+    
+  }
+
+  .events-cards img {
+    width: 100%; /* Full width on small screens */
+    max-height: 400px;
+  }
+}
 
 /* Menu page Styling */
 
 
+/* Existing CSS (keep this) */
+/* ... */
 
+/* Menu Styles */
+main table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse; /* Single border */
+}
+
+main th,
+main td {
+  padding: 10px;
+  text-align: left; /* Default to left */
+  border-bottom: 1px solid #ddd; /* Light gray border */
+}
+
+main th {
+  background-color: black;
+  color: white;
+}
+
+main .menu-category {
+  background-color: #000000; /* Light gray */
+  font-weight: bold;
+  text-align: ceter;
+  padding: 12px;
+  color: white;
+}
+
+main .menu-item {
+  font-weight: lighter;
+}
+
+main .menu-price {
+  text-align: right; /* Right align prices */
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+  main table {
+    width: 95%;
+  }
+
+  main th,
+  main td {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+}
 
 /* Location page Styling */
 
@@ -286,56 +403,7 @@ main {
   }
 }
 
-/* Existing CSS (keep this) */
-/* ... */
 
-/* Menu Styles */
-main table {
-  width: 80%;
-  margin: 20px auto;
-  border-collapse: collapse; /* Single border */
-}
-
-main th,
-main td {
-  padding: 10px;
-  text-align: left; /* Default to left */
-  border-bottom: 1px solid #ddd; /* Light gray border */
-}
-
-main th {
-  background-color: black;
-  color: white;
-}
-
-main .menu-category {
-  background-color: #000000; /* Light gray */
-  font-weight: bold;
-  text-align: ceter;
-  padding: 12px;
-  color: white;
-}
-
-main .menu-item {
-  font-weight: lighter;
-}
-
-main .menu-price {
-  text-align: right; /* Right align prices */
-}
-
-/* Responsive Table */
-@media screen and (max-width: 600px) {
-  main table {
-    width: 95%;
-  }
-
-  main th,
-  main td {
-    padding: 8px;
-    font-size: 0.9em;
-  }
-}
 
 /* Contact page Styling */
 
@@ -397,6 +465,8 @@ textarea {
 }
 
 .submit-button {
+  display: flex;
+  margin: auto;
   background-color: black;
   color: white;
   padding: 10px 15px;
@@ -408,7 +478,8 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: #333;
+  background-color: #b79393;
+  color: black;
 }
 
 /* Responsive styles */
