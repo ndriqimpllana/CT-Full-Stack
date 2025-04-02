@@ -34,6 +34,7 @@
 .navbar a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 /* Hamburger style menu */
 .hamburger {
@@ -111,183 +112,25 @@
   background-color: lightblue;
   border-radius: 5px;
 }
-/*
-.site-logo:hover {
-  transition: background-color 0.5s ease;
-  background-color: lightblue;
-}
 
-*/
 
-/* Banner styling */
-
-/* Existing CSS (keep this) */
-/* ... */
-
-/* Banner Section Styles */
-/* Existing CSS (keep this) */
-/* ... */
 
 /* Featured Events Section Styles */
-.featured-events {
-  margin-top: 30px;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.events-header {
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 1.7rem;
-}
-
-.event-cards {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.event {
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 40px; /* Reduced padding */
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-}
-
-.event img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px 15px 0 0;
-  margin-bottom: 5px; /* Reduced margin */
-}
-
-.event h3 {
-  margin: 8px 0; /* Reduced margin */
-  font-size: 1.1em; /* Slightly smaller font */
-  color: #333;
-}
-
-.event p {
-  margin: 3px 0; /* Reduced margin */
-  font-size: 0.9em; /* Smaller font size */
-  color: #555;
-}
-
-.more-button {
-  background-color: black;
-  color: white;
-  padding: 6px 12px; 
-  border: none;
-  border-radius: 10px;
-  text-decoration: none;
-  margin-top: auto;
-  transition: background-color 0.3s ease;
-  font-size: 1rem; /* Smaller button text */
-  width: 100px;
-  height: 20px;
-  position: relative;
-}
-
-.more-button:hover {
-  background-color: #534f4f;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-  .event {
-    flex-basis: 90%; /* Increased width on small screens */
-  }
-}
 
 
-/* Events page Styling */
-
-
-/* Existing CSS (keep this) */
-/* ... */
 
 /* Events Page Styles */
-.events-page {
-  padding: 20px;
-  width: 100%;
-}
 
-.header-events {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
 
-.events-cards {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  flex: 1;
-}
 
-/* Consolidated event card styles */
-.events-cards article {
-  display: flex; /* Flexbox for image/text layout */
-  width: 100%; /* Full width within container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
-  margin-bottom: 20px;
-  overflow: hidden; 
-  border-radius: 20px;
-  padding: 20px;
-}
 
-.events-cards img {
-  width: 150px; /* Fixed width for the image */
-  height: auto;
-  object-fit: cover; 
-  border-radius: 20px;/* Ensure image fills the space */
-}
-
-.events-cards .event-content {
-  padding: 15px;
-  flex: 1; /* Allow content to grow */
-}
-
-.events-cards h3 {
-  margin: auto;
-}
-
-.events-cards p {
-  color: #555;
-  font-size: 0.9em;
-  margin: auto;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-  .events-cards article {
-    flex-direction: column; /* Stack on small screens */
-    
-  }
-
-  .events-cards img {
-    width: 100%; /* Full width on small screens */
-    max-height: 400px;
-  }
-}
 
 /* Menu page Styling */
 
 
-/* Existing CSS (keep this) */
-/* ... */
 
-/* Menu Styles */
+
+
 main table {
   width: 80%;
   margin: 20px auto;
@@ -297,8 +140,7 @@ main table {
 main th,
 main td {
   padding: 10px;
-  text-align: left; /* Default to left */
-  border-bottom: 1px solid #ddd; /* Light gray border */
+  border-bottom: 1px solid #3b2e2e;
 }
 
 main th {
@@ -307,7 +149,7 @@ main th {
 }
 
 main .menu-category {
-  background-color: #000000; /* Light gray */
+  background-color: #000000;
   font-weight: bold;
   text-align: ceter;
   padding: 12px;
@@ -322,29 +164,22 @@ main .menu-price {
   text-align: right; /* Right align prices */
 }
 
-/* Responsive Table */
-@media screen and (max-width: 600px) {
-  main table {
-    width: 95%;
-  }
-
-  main th,
-  main td {
-    padding: 8px;
-    font-size: 0.9em;
-  }
+tr:hover {
+  background-color: lightblue;
 }
 
-/* Location page Styling */
 
-/* Existing CSS (keep this) */
-/* ... */
 
-/* Location Page Styles */
-/* Existing CSS (keep this) */
-/* ... */
+
+
+
 
 /* Location Page Styles */
+
+
+
+
+
 main {
   padding: 20px;
 }
@@ -355,20 +190,20 @@ main {
   color: #333;
 }
 
-.location-container {  /* NEW STYLES */
+.location-container { 
   display: flex;
   flex-direction: column;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  overflow: hidden; /* Hide any overflow from iframe */
-  margin: 0 auto 20px; /* Center and add bottom margin */
-  max-width: 600px; /* Match iframe width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 40px;
+  max-width: 700px;
+  
 }
 
 .address {
   padding: 15px;
-  margin-bottom: 0; /* Remove bottom margin */
 }
 
 .address address {
@@ -377,43 +212,26 @@ main {
   color: #555;
 }
 
-.map {
-  display: block; /* Change from flex to block */
-}
 
 .map iframe {
   width: 100%;
   height: 450px;
   border: 0;
-  display: block; /* Remove any extra spacing */
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 600px) {
-  main {
-    padding: 10px;
-  }
 
-  .location {
-    font-size: 1.5em;
-  }
-
-  .location-container {
-    width: 95%; /* Take up more width on small screens */
-  }
-}
 
 
 
 /* Contact page Styling */
 
-/* Contact form styles */
+
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Minimum viewport height */
-  margin: 0; /* Reset default body margin */
+  min-height: 100vh; 
+  margin: 0;
 }
 
 .contact-form {
@@ -427,22 +245,21 @@ fieldset {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 8px;
-  width: 80%; /* Adjust as needed */
-  max-width: 600px; /* Maximum width */
+  max-width: 600px;
 }
 
 legend {
   font-size: 1.5em;
   font-weight: bold;
-  color: #333;
+  color: #000000;
   padding: 0 10px;
 }
 
 label {
-  display: block;
+  display: flex;
   margin-top: 10px;
   margin-bottom: 5px;
-  color: #555;
+  color: #000000;
   font-weight: bold;
 }
 
@@ -455,14 +272,11 @@ textarea {
   border-radius: 4px;
   margin-bottom: 15px;
   font-size: 1em;
-  font-family: inherit; /* Inherit font from body */
-  box-sizing: border-box; /* Include padding in width */
+  font-family: inherit; 
+  box-sizing: border-box; 
 }
+ 
 
-textarea {
-  resize: vertical; /* Allow vertical resizing */
-  min-height: 100px;
-}
 
 .submit-button {
   display: flex;
@@ -475,23 +289,15 @@ textarea {
   cursor: pointer;
   font-size: 1em;
   transition: background-color 0.3s ease;
+  flex-wrap: wrap;
 }
 
 .submit-button:hover {
-  background-color: #b79393;
+  background-color: lightblue;
   color: black;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-  fieldset {
-    width: 95%;
-  }
 
-  textarea {
-    columns: 50; /* Adjust cols for smaller screens */
-  }
-}
 
 main {
   flex: 1; /* Allow main to grow and take available space */
