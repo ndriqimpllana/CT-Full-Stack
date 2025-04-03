@@ -119,9 +119,242 @@
 
 
 
+/* Make the banner section a positioning container */
+.banner {
+  position: relative; 
+  width: 100%; 
+}
+
+/* Style and position the banner heading */
+
+.banner-header {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black; 
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+/* === About Us Section Styling === */
+
+.about-us {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  border-radius: 15px;
+  border: 5px solid black;
+  max-width: 50%;
+}
+
+
+/* Style the history paragraph */
+
+.aboutus-header {
+  text-align: center;
+}
+
+/* === Featured Events Section Styling === */
+
+.featured-events {
+  padding: 20px;
+}
+
+.events-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Apply Flexbox to the container of the event cards */
+.event-cards {
+  display: flex;         /* Enable Flexbox */
+  flex-wrap: wrap;       /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute space around items */
+  gap: 20px;            /* Add space between cards */
+}
+
+/* Style individual event cards */
+.event {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  /* Flex basis for responsiveness */
+  flex: 1 1 300px; /* Grow, shrink, with a base width of 300px */
+  /* min-width: 250px; */ /* Optional: prevent cards from becoming too narrow */
+  display: flex; /* Optional: Use flex inside the card for layout */
+  flex-direction: column; /* Optional: Stack card content vertically */
+  text-align: center;
+}
+
+.event img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.event h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.event , p {
+  margin-bottom: 15px;
+  flex-grow: 1; /* Allow paragraph to take up space if cards vary in height */
+}
+
+/* Style the "See More" buttons */
+.more-button {
+  display: inline-block; /* Allow padding and margins */
+  background-color: black; /* Example color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: auto; /* Push button to bottom if card content varies */
+}
+
+.more-button:hover {
+  background-color: lightblue; /* Example hover color */
+  color: black;
+  transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+
+/* === Responsiveness for Event Cards === */
+
+/* Example: On smaller screens, make cards take more width */
+@media screen and (max-width: 700px) {
+  .event {
+     /* Adjust flex-basis for medium screens, maybe 2 cards per row */
+     flex: 1 1 45%;
+     /* Or make them stack if preferred: */
+     /* flex-basis: 100%; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .event {
+     /* Make cards take full width on small screens */
+     flex-basis: 100%;
+  }
+
+  .banner-header {
+    font-size: 0.9em; /* Adjust font size */
+    top: 40px; /* Adjust position if needed */
+  }
+}
+
+
 /* Events Page Styles */
 
 
+/* === Events Page Styling === */
+
+.events-page {
+  padding: 20px; /* Add padding around the whole events section */
+  max-width: 900px; /* Optional: Constrain width for better readability on large screens */
+  margin: 20px auto; /* Center the events section */
+}
+
+.header-events {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em; /* Make header more prominent */
+}
+
+/* Style the container for the event cards */
+.events-cards {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  gap: 25px; /* Space between cards */
+}
+
+/* Style each individual event card */
+.events-cards article {
+  display: flex;         /* Use flexbox for internal layout (img left, text right) */
+  background-color: #fff;
+  border-radius: 10px;     /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* For hover effect */
+  align-items: center; /* Align items to the top */
+}
+
+/* Hover effect for the card */
+.events-cards article:hover {
+  transform: scale(1.02); /* Slightly enlarge card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow */
+}
+
+/* Style the image within the card */
+.events-cards article img {
+  flex: 1; 
+  height: auto;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.event1 , h3 > p {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+}
+.event2 , h3 > p {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+}
+.event3 , h3 > p {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+}
+.event4 , h3 > p {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+}
+
+
+
+/* --- Responsiveness --- */
+
+@media screen and (max-width: 600px) {
+  .events-cards article {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items */
+    text-align: center;
+  }
+
+  .events-cards article img {
+    flex-basis: auto; /* Reset flex basis */
+    width: 80%; /* Make image wider but not full width */
+    max-width: 250px; /* Limit max width */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 15px; /* Add bottom margin */
+  }
+
+  .events-cards article h3 {
+     font-size: 1.2em;
+  }
+
+   /* The conceptual text container would also align center */
+  .events-cards article .event-text-content {
+     align-items: center;
+  }
+}
 
 
 
@@ -182,6 +415,9 @@ tr:hover {
 
 main {
   padding: 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .location {
@@ -193,12 +429,13 @@ main {
 .location-container { 
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
+  
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   margin: auto;
   margin-top: 40px;
-  max-width: 700px;
+  width: 50%;
+  flex-wrap: wrap;
   
 }
 
@@ -209,7 +446,21 @@ main {
 .address address {
   font-style: normal;
   line-height: 1.6;
-  color: #555;
+  color: #000000;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  text-align: end;
+
+}
+
+.working-hours {
+  font-style: normal;
+  line-height: 1.6;
+  color: #000000;
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 
@@ -230,8 +481,9 @@ main {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh; /* make sure that the body takes up all the remaining space in the page */
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .contact-form {
@@ -242,10 +494,11 @@ body {
 }
 
 fieldset {
-  border: 1px solid #ccc;
+  border: none;
   padding: 20px;
   border-radius: 8px;
   max-width: 600px;
+  box-shadow: 0 8px 16px lightgray;
 }
 
 legend {
@@ -261,6 +514,7 @@ label {
   margin-bottom: 5px;
   color: #000000;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 input[type="text"],
@@ -268,14 +522,26 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px;
   margin-bottom: 15px;
   font-size: 1em;
   font-family: inherit; 
   box-sizing: border-box; 
+  box-shadow: 0 8px 16px lightgray;
+  transition:  transform 0.2s ease;
+
+  
 }
  
+input:hover {
+  transform: scale(1.05);
+}
+
+textarea:hover {
+  transform: scale(1.05);
+}
+
 
 
 .submit-button {
@@ -295,6 +561,7 @@ textarea {
 .submit-button:hover {
   background-color: lightblue;
   color: black;
+  transform: scale(1.05);
 }
 
 
