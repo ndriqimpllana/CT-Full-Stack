@@ -120,126 +120,6 @@
 
 
 
-/* Featured Events Section Styles */
-
-
-
-/* Make the banner section a positioning container */
-.banner {
-  position: relative; 
-  width: 100%; 
-}
-
-/* Style and position the banner heading */
-
-.banner-header {
-  position: absolute;
-  top: 250px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: black; 
-  text-align: center;
-  font-weight: bolder;
-  font-size: 2rem;
-}
-
-/* === About Us Section Styling === */
-
-.about-us {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  border-radius: 15px;
-  border: 5px solid black;
-  max-width: 50%;
-}
-
-
-/* Style the history paragraph */
-
-.aboutus-header {
-  text-align: center;
-}
-
-/* === Featured Events Section Styling === */
-
-.featured-events {
-  padding: 20px;
-}
-
-.events-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Apply Flexbox to the container of the event cards */
-.event-cards {
-  display: flex;         /* Enable Flexbox */
-  flex-wrap: wrap;       /* Allow items to wrap to the next line */
-  justify-content: space-between; /* Distribute space around items */
-  gap: 20px;            /* Add space between cards */
-}
-
-/* Style individual event cards */
-.event {
-  border: 1px solid #eee;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  background-color: #fff;
-  /* Flex basis for responsiveness */
-  flex: 1 1 300px; /* Grow, shrink, with a base width of 300px */
-  /* min-width: 250px; */ /* Optional: prevent cards from becoming too narrow */
-  display: flex; /* Optional: Use flex inside the card for layout */
-  flex-direction: column; /* Optional: Stack card content vertically */
-  text-align: center;
-}
-
-.event img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.event h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.event , p {
-  margin-bottom: 15px;
-  flex-grow: 1; /* Allow paragraph to take up space if cards vary in height */
-}
-
-/* Style the "See More" buttons */
-.more-button {
-  display: inline-block; /* Allow padding and margins */
-  background-color: black; /* Example color */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: auto; /* Push button to bottom if card content varies */
-}
-
-.more-button:hover {
-  background-color: lightblue; /* Example hover color */
-  color: black;
-  transform: scale(1.05); /* Slight grow effect on hover */
-}
-
-
-/* === Responsiveness for Event Cards === */
-
-/* Example: On smaller screens, make cards take more width */
 @media screen and (max-width: 700px) {
   .event {
      /* Adjust flex-basis for medium screens, maybe 2 cards per row */
@@ -261,7 +141,21 @@
   }
 }
 
+.banner > img {
+  position: relative;
+}
 
+
+.banner-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -450%);
+  font-weight: bolder;
+  font-size: 3rem;
+  color: red;
+  background-color: lightcoral;
+}
 /* Events Page Styles */
 
 
