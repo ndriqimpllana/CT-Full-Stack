@@ -65,49 +65,7 @@
   /* Media Query for smaller screens */
 
 
-@media screen and (max-width: 700px) {
-  .navbar {
-      position:absolute;
-      top: 100%; /* positioning below header */
-      left: 0;
-      width: 100%;
-      background-color: black;
-      z-index: 1; /* Ensure it's on top */
-  }
 
-  .navbar ul {
-      display: none;
-      flex-direction: column;
-  }
-
-  .navbar ul li {
-      text-align: center;
-      margin: 15px 0;
-  }
-
-  .hamburger {
-      display:block;
-
-  }
-
-  /* Show menu when the checkbox is checked */
-  #menu-toggle:checked + .hamburger + .navbar ul {
-      display: flex;
-  }
-
-  /* toggle menu animation */
-  #menu-toggle:checked + .hamburger  .bar:nth-child(2) {
-      opacity: 0;
-  }
-
-  #menu-toggle:checked + .hamburger .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-  }
-
-  #menu-toggle:checked + .hamburger .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-  }
-}
 
 .navbar a {
   color: white;
@@ -385,56 +343,6 @@
 }
 
 
-/* --- Responsive Adjustments --- */
-@media screen and (max-width: 768px) {
-  .event-card {
-    flex-direction: column;
-    align-items: center; 
-    text-align: center; 
-    gap: 20px; /* Adjust gap */
-  }
-
-  .event-image {
-    flex-basis: auto; /* Reset flex-basis */
-    width: 80%; 
-    margin-bottom: 15px; 
-    max-width: 80%;
-  }
-
-  .text-content {
-    /* Ensure text content takes full width */
-    width: 100%;
-  }
-
-   .text-content h3 {
-     font-size: 1.4em;
-   }
-    .text-content p {
-     font-size: 0.95em;
-   }
-}
-
-@media screen and (max-width: 480px) {
-   .events-container {
-     padding: 15px 10px;
-   }
-   .event-card {
-     padding: 15px;
-     gap: 15px;
-   }
-   .event-image {
-     width: 100%;
-     max-width: 100%;
-   }
-   .main-header {
-     font-size: 1.8em;
-   }
-   .text-content h3 {
-     font-size: 1.25em;
-   }
-}
-
-
 
 
 
@@ -654,4 +562,115 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .navbar {
+      position:absolute;
+      top: 100%; /* positioning below header */
+      left: 0;
+      width: 100%;
+      background-color: black;
+      z-index: 1; /* Ensure it's on top */
+  }
+
+  .navbar ul {
+      display: none;
+      flex-direction: column;
+  }
+
+  .navbar ul li {
+      text-align: center;
+      margin: 15px 0;
+  }
+
+  .hamburger {
+      display:block;
+
+  }
+  /* show single card centered set in column for smaller screens */
+  .event-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+
+  /* Show menu when the checkbox is checked */
+  #menu-toggle:checked + .hamburger + .navbar ul {
+      display: flex;
+  }
+
+  /* toggle menu animation */
+  #menu-toggle:checked + .hamburger  .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  #menu-toggle:checked + .hamburger .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  #menu-toggle:checked + .hamburger .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+  .event-card {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    gap: 20px; /* Adjust gap */
+  }
+
+  .event-image {
+    flex-basis: auto; /* Reset flex-basis */
+    width: 80%; 
+    margin-bottom: 15px; 
+    max-width: 80%;
+  }
+
+  .text-content {
+    /* Ensure text content takes full width */
+    width: 100%;
+  }
+
+   .text-content h3 {
+     font-size: 1.4em;
+   }
+    .text-content p {
+     font-size: 0.95em;
+   }
+
+   /* Location page media for smaller screens */
+
+   .location-container {
+    margin: auto;
+    width: 90%;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .events-container {
+     padding: 15px 10px;
+   }
+   .event-card {
+     padding: 15px;
+     gap: 15px;
+   }
+   .event-image {
+     width: 100%;
+     max-width: 100%;
+   }
+   .main-header {
+     font-size: 1.8em;
+   }
+   .text-content h3 {
+     font-size: 1.25em;
+   }
 }
