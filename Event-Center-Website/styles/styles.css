@@ -12,7 +12,11 @@
   position: relative;
   
 }
+
+
 /* Style the logo of the page */
+
+
 .site-logo {
   color: white;
   text-decoration: none;
@@ -40,7 +44,11 @@
   color: white;
   font-weight: bold;
 }
+
+
 /* Hamburger style menu */
+
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -56,16 +64,12 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3 ease-in-out;
 }
+
+
   /* Hide the checkbox */
 .menu-checkbox {
   display: none;
 }
-
-
-  /* Media Query for smaller screens */
-
-
-
 
 .navbar a {
   color: white;
@@ -250,6 +254,9 @@
   background-color: lightblue; /* lightblue on hover */
   color: #0b0b0b;
 }
+
+
+
 
 /* Events page Styling */
 
@@ -501,7 +508,7 @@ label {
   font-weight: bold;
   font-size: 1.2rem;
 }
-
+ /* some simple styling for the boxes within the fieldset box */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -516,11 +523,11 @@ textarea {
   box-shadow: 0 5px 10px rgb(176, 173, 173);
   transition:  transform 0.2s ease;
 }
- 
+ /* for practice i added some hover effect to the input areas */
 input:hover {
   transform: scale(1.05);
 }
-
+/* and some hover effect to the textarea */
 textarea:hover {
   transform: scale(1.05);
 }
@@ -535,11 +542,11 @@ textarea:hover {
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer; /* change cursor when on top of the button */
   font-size: 1.2em;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease; /* color transition */
 }
-
+/* slight hovering effect for the button */
 .submit-button:hover {
   background-color: lightblue;
   color: black;
@@ -547,7 +554,7 @@ textarea:hover {
 }
 
 
-
+/* for all pages */
 main {
   flex: 1; /* ensure that the main takes all the space and the footer is always at the bottom */
 }
@@ -569,6 +576,7 @@ footer {
 
 
 @media screen and (max-width: 900px) {
+  /* making navigation bar responsive in different screen sizes */
   .navbar {
       position:absolute;
       top: 100%; /* positioning below header */
@@ -592,7 +600,9 @@ footer {
       display:block;
 
   }
+
   /* show single card centered set in column for smaller screens */
+
   .event-cards {
     display: flex;
     flex-direction: column;
@@ -603,11 +613,13 @@ footer {
 
 
   /* Show menu when the checkbox is checked */
+
   #menu-toggle:checked + .hamburger + .navbar ul {
       display: flex;
   }
 
   /* toggle menu animation */
+
   #menu-toggle:checked + .hamburger  .bar:nth-child(2) {
       opacity: 0;
   }
@@ -620,19 +632,28 @@ footer {
       transform: translateY(-8px) rotate(-45deg);
   }
 
+  /* make the events page compatible */
 
   .event-card {
     flex-direction: column;
     align-items: center; 
     text-align: center; 
+    padding: 15px;
     gap: 20px; /* Adjust gap */
   }
 
+  .events-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+  }
   .event-image {
     flex-basis: auto; /* Reset flex-basis */
     width: 80%; 
     margin-bottom: 15px; 
     max-width: 80%;
+    
   }
 
   .text-content {
@@ -647,30 +668,14 @@ footer {
      font-size: 0.95em;
    }
 
+   .main-header {
+    font-size: 1.8em;
+  }
+
    /* Location page media for smaller screens */
 
    .location-container {
     margin: auto;
     width: 90%;
-   }
-}
-
-@media screen and (max-width: 500px) {
-   .events-container {
-     padding: 15px 10px;
-   }
-   .event-card {
-     padding: 15px;
-     gap: 15px;
-   }
-   .event-image {
-     width: 100%;
-     max-width: 100%;
-   }
-   .main-header {
-     font-size: 1.8em;
-   }
-   .text-content h3 {
-     font-size: 1.25em;
    }
 }
