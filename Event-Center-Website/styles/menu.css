@@ -1,0 +1,45 @@
+/* Menu page Styling */
+
+
+
+
+
+main table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse; 
+  }
+  
+  main th,
+  main td {
+    padding: 10px;
+    border-bottom: 1px solid #3b2e2e;
+  }
+  
+  main th {
+    background-color: black;
+    color: white;
+  }
+  
+  main .menu-category {
+    background-color: #000000;
+    font-weight: bold;
+    text-align: ceter;
+    padding: 12px;
+    color: white;
+  }
+  
+  main .menu-item {
+    font-weight: lighter;
+  }
+  
+  main .menu-price {
+    text-align: right; 
+  }
+  
+  tr:hover {
+    background-color: lightblue;
+  }
+  
+  
+  
