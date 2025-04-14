@@ -1,14 +1,9 @@
-/* Location Page Styles */
-
-
 main {
     display: flex;
     flex-direction: column;
     flex: 1;
     
 }
-
-
 
 
 .location {
@@ -31,10 +26,12 @@ main {
     
   }
   
+
 .address {
     padding: 15px;
   }
   
+
 .address address {
     font-style: normal;
     line-height: 1.6;
@@ -45,6 +42,7 @@ main {
     text-align: end;
   
   }
+  
   
 .working-hours {
     font-style: normal;
