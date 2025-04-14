@@ -1,7 +1,3 @@
-
-
-
-/* Basic Navbar Styles */
 :root {
   font-family: Arial, Helvetica, sans-serif;
 
@@ -73,8 +69,8 @@ body {
   transition: all 0.3 ease-in-out;
 }
 
+/* Hide the checkbox */
 
-  /* Hide the checkbox */
 .menu-checkbox {
   display: none;
 }
@@ -95,6 +91,8 @@ body {
 
 
 /* for all pages */
+
+
 main {
   flex: 1; /* ensure that the main takes all the space and the footer is always at the bottom */
 }
@@ -113,7 +111,7 @@ footer {
 
 
 
-
+/* media queries for compatibility between different devices and screen sizes */
 
 @media screen and (max-width: 900px) {
   /* making navigation bar responsive in different screen sizes */
@@ -190,9 +188,9 @@ footer {
   }
   .event-image {
     flex-basis: auto; /* Reset flex-basis */
-    width: 80%; 
     margin-bottom: 15px; 
-    max-width: 80%;
+    max-width: 100%;
+    margin: auto;
     
   }
 
@@ -216,6 +214,8 @@ footer {
 
    .location-container {
     margin: auto;
-    width: 90%;
+    width: 100%;
+    padding: 0;
+    height: 100%;
    }
 }
