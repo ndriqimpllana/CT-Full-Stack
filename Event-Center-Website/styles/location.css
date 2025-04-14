@@ -1,7 +1,11 @@
 /* Location Page Styles */
 
 
-
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+}
 
 
 
