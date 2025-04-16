@@ -77,6 +77,6 @@ body {
   .submit-button:hover {
     background-color: lightblue;
     color: black;
-    transform: scale(1.5em) ;
+    transform: scale(1.05) ;
   }
   

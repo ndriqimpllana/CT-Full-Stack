@@ -1,8 +1,4 @@
-/* Events page Styling */
 
-
-
-/* Style the main container for the events section */
 
 
 .events-container {
@@ -43,7 +39,8 @@
   }
   
   
-  
+  /* Add hover effect for event cards */
+  /* This will make the card lift slightly and add a shadow */
   
   .event-card:hover {
     transform: translateY(-5px);

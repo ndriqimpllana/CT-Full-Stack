@@ -1,6 +1,10 @@
 :root {
   font-family: Arial, Helvetica, sans-serif;
-
+  --main-color: #000000;
+  --secondary-color: #3b2e2e;
+  --text-color: #000000;
+  --hover-color: #3b2e2e;
+  --hover-bg-color: lightblue;
  
 }
 body {
