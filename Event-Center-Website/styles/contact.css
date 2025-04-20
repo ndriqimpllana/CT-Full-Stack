@@ -71,6 +71,7 @@ body {
     border-radius: 4px;
     cursor: pointer; /* change cursor when on top of the button */
     font-size: 1.2em;
+    font-weight: bold;
     transition: background-color 0.5s ease; /* color transition */
   }
   /* slight hovering effect for the button */
@@ -78,5 +79,6 @@ body {
     background-color: lightblue;
     color: black;
     transform: scale(1.05) ;
+    font-weight: bold;
   }
   

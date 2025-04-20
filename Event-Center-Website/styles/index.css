@@ -172,4 +172,5 @@
   .more-button:hover {
     background-color: lightblue; /* lightblue on hover */
     color: #0b0b0b;
+    font-weight: bold;
   }
