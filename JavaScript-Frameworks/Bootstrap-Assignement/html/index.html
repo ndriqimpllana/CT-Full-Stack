@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Assignment</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header style="position: sticky; top: 0; z-index: 1;">
+      <nav
+        id="navigation-bar"
+        class="navbar navbar-expand-md navbar-dark bg-dark px-3 mb-4"
+        aria-label="Main navigation"
+        
+      >
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">Bootstrap</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-pills">
+              <li class="nav-item">
+                <a href="#welcome" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#register-user" class="nav-link">Register</a>
+              </li>
+              <li class="nav-item">
+                <a href="#our-members" class="nav-link">Members</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main
+      data-bs-spy="scroll"
+      data-bs-target="#navigation-bar"
+      data-bs-smooth-scroll="true"
+      tabindex="0"
+      class="container p-0"
+    >
+      <section class="mb-5 container col-md-6 p-4" id="welcome" aria-label="Welcome">
+        <div class="row">
+          <div class="d-flex align-items-center text-center">
+            <div class="card shadow-lg rounded-2 bg-light border">
+              <h1 class="card-title">
+                This page has been styled with Bootstrap.
+              </h1>
+              <p class="card-text">
+                I styled this page only with bootstrap adding styles with css
+                only for the font. This is a sinple form for registering and
+                adding new users and also a section for showing the members of
+                the site. The navbar is responsive and the page is scrollable. I
+                used the Bootstrap grid system to create a responsive layout.
+                The page is divided into sections, each with its own heading and
+                content. The form is styled with Bootstrap classes to make it
+                look clean and modern. The members section is populated with
+                hard-code sample data to stimulate user submissions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="register-user" class="mb-5">
+        <h2>Register</h2>
+        <form>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" required />
+              <div class="invalid-feedback">Please provide your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" required />
+              <div class="invalid-feedback">Please provide your last name.</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Enter your Email</label>
+            <input type="email" class="form-control" id="email" required />
+            <div class="invalid-feedback">Please provide a valid email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              required
+            />
+
+            <div class="invalid-feedback">Please provide a password.</div>
+          </div>
+
+          <div class="form-check mb-3">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="termsagree"
+              required
+            />
+            <label for="termsagree" class="form-check-label">
+              Agree to terms and conditions
+            </label>
+
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+
+          <button class="btn btn-success w-100" type="submit">
+            Submit Registration
+          </button>
+        </form>
+      </section>
+       
+      <section id="our-members">
+        <h2>User Data</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <th>1</th>
+                        <td>Ndricim</td>
+                        <td>Pllana</td>
+                        <td>ndriqimpllana@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Maria</td>
+                        <td>Leon</td>
+                        <td>maria.leon@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Donat</td>
+                        <td>Pllana</td>
+                        <td>donatpllana@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Yigit</td>
+                        <td>Senyayla</td>
+                        <td>yigitsen@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Arnold</td>
+                        <td>Palmer</td>
+                        <td>arpalm@gmail.com</td>
+                    </tr>
+                
+
+            </table>
+        </div>
+      </section>
+      <section>
+        <figure class="container-fluid mb-4 mt-4">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="img-fluid w-100 mb-4">
+        </figure>
+        <figure class="d-flex justify-content-center mb-3 p-4">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="rounded-circle mb-3" height="500px" width="500px">
+        </figure>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
