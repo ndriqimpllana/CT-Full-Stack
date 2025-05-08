@@ -78,17 +78,15 @@
       </section>
       <section id="register-user" class="mb-5">
         <h2>Register</h2>
-        <form>
-          <div class="row mb-3">
+        <form class="needs-validation g-3" novalidate>
+          <div class="row mb-4">
             <div class="col-md-6">
               <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName" required />
-              <div class="invalid-feedback">Please provide your name.</div>
+              <input type="text" class="form-control" id="firstName"/>
             </div>
             <div class="col-md-6">
               <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName" required />
-              <div class="invalid-feedback">Please provide your last name.</div>
+              <input type="text" class="form-control" id="lastName"/>
             </div>
           </div>
           <div class="mb-3">
@@ -96,7 +94,7 @@
             <input type="email" class="form-control" id="email" required />
             <div class="invalid-feedback">Please provide a valid email.</div>
           </div>
-          <div class="mb-3">
+          <div class="mb-2">
             <label for="password" class="form-label">Password</label>
             <input
               type="password"
@@ -108,7 +106,7 @@
             <div class="invalid-feedback">Please provide a password.</div>
           </div>
 
-          <div class="form-check mb-3">
+          <div class="form-check mb-5">
             <input
               type="checkbox"
               class="form-check-input"
@@ -181,11 +179,36 @@
         <figure class="container-fluid mb-4 mt-4">
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="img-fluid w-100 mb-4">
         </figure>
-        <figure class="d-flex justify-content-center mb-3 p-4">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="rounded-circle mb-3" height="500px" width="500px">
+        <figure class="d-flex justify-content-center mb-3 p-4 container-fluid">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="rounded-circle mb-3 img-fluid">
         </figure>
       </section>
+      <button class="btn btn-success mb-3 w-100">Always Visible</button>
+      <button class="btn btn-warning mb-4 w-100 d-none d-md-block">Hidden in small screens</button>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
   </body>
 </html>
