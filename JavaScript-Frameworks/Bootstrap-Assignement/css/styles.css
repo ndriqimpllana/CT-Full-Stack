@@ -10,7 +10,21 @@ html {
     padding: 15px; 
     margin-bottom: 70px; 
     font-weight: bolder;
-    color: hsl(143, 48%, 22%);}
+    color: hsl(143, 48%, 22%);
+    font-size: 3rem;
+}
+
+#our-users h2 {
+    font-weight: bolder;
+    color: hsl(143, 48%, 22%);
+    padding: 40px;
+    font-size: 3rem;
+    margin-bottom: 70px;
+} 
+
+table {
+    border: 1px solid black;
+}
 
 .form-label, .form-check-label {
 
@@ -30,3 +44,4 @@ html {
   .btn:hover {
     transform: scale(1.01) ;
   }
+

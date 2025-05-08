@@ -11,24 +11,13 @@
     />
   </head>
   <body>
+    <!-- Not required but i did want to have the navigation bar to always show -->
     <header style="position: sticky; top: 0; z-index: 1;">
-      <nav
-        id="navigation-bar"
-        class="navbar navbar-expand-md navbar-dark bg-dark px-3 mb-4"
-        aria-label="Main navigation"
-        
-      >
+        <!-- I tried to add ARIA labels to a few of the elements to get used to get better at practicing better accesibility for assistive technologies like screen readers-->
+      <nav id="navigation-bar" class="navbar navbar-expand-md navbar-dark bg-dark px-3 mb-4" aria-label="Main navigation" >
         <div class="container-fluid">
           <a href="#" class="navbar-brand">Bootstrap</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,37 +29,31 @@
                 <a href="#register-user" class="nav-link">Register</a>
               </li>
               <li class="nav-item">
-                <a href="#our-members" class="nav-link">Members</a>
+                <a href="#our-users" class="nav-link">Users</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main
-      data-bs-spy="scroll"
-      data-bs-target="#navigation-bar"
-      data-bs-smooth-scroll="true"
-      tabindex="0"
-      class="container p-0"
-    >
+    <!-- Learning about navigation bar in bootstrap documentation i saw the scroll responsive navbar and i did like the idea so i implemented it within the page-->
+    <main data-bs-spy="scroll" data-bs-target="#navigation-bar" data-bs-smooth-scroll="true" tabindex="0" class="container p-0" >
       <section class="mb-5 container col-md-6 p-4" id="welcome" aria-label="Welcome">
-        <div class="row">
+        <div class="row p-2 mt-4">
           <div class="d-flex align-items-center text-center">
-            <div class="card shadow-lg rounded-2 bg-light border">
-              <h1 class="card-title">
+            <div class="card shadow-lg rounded-2 bg-light border p-5">
+              <h1 class="card-title p-2 mb-4">
                 This page has been styled with Bootstrap.
               </h1>
               <p class="card-text">
-                I styled this page only with bootstrap adding styles with css
-                only for the font. This is a sinple form for registering and
-                adding new users and also a section for showing the members of
-                the site. The navbar is responsive and the page is scrollable. I
-                used the Bootstrap grid system to create a responsive layout.
-                The page is divided into sections, each with its own heading and
-                content. The form is styled with Bootstrap classes to make it
-                look clean and modern. The members section is populated with
-                hard-code sample data to stimulate user submissions.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, sit dolor corporis fuga error enim, itaque nemo expedita, libero architecto rem earum nam reiciendis! Iure, quas dolorem. Eius, odit maxime!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima est. Tempora accusantium non modi voluptates. Aliquid pariatur error tempore, beatae nobis maiores, rem dolore quod hic, provident laudantium sit.
+                <br> <br>
+                <strong>
+                    I have added this card simply to showcase the scrollspy type of
+                    the navigation bar which i liked when i was learning about 
+                    styling the navigation bar with bootstrap from the official page.
+                 </strong>
               </p>
             </div>
           </div>
@@ -82,11 +65,13 @@
           <div class="row mb-4">
             <div class="col-md-6">
               <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="firstName"/>
+              <input type="text" class="form-control" id="firstName" required/>
+              <div class="invalid-feedback">Please enter your name.</div>
             </div>
             <div class="col-md-6">
               <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="lastName"/>
+              <input type="text" class="form-control" id="lastName" required/>
+              <div class="invalid-feedback">Please enter your last name.</div>
             </div>
           </div>
           <div class="mb-3">
@@ -96,23 +81,13 @@
           </div>
           <div class="mb-2">
             <label for="password" class="form-label">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              required
-            />
+            <input type="password" class="form-control" id="password" required />
 
             <div class="invalid-feedback">Please provide a password.</div>
           </div>
 
           <div class="form-check mb-5">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="termsagree"
-              required
-            />
+            <input type="checkbox" class="form-check-input" id="termsagree" required/>
             <label for="termsagree" class="form-check-label">
               Agree to terms and conditions
             </label>
@@ -128,8 +103,8 @@
         </form>
       </section>
        
-      <section id="our-members">
-        <h2>User Data</h2>
+      <section id="our-users">
+        <h2 class="text-center">User Data</h2>
         <div class="table-responsive">
             <table class="table table-striped table-hover">
                 <thead>
@@ -170,27 +145,51 @@
                         <td>Palmer</td>
                         <td>arpalm@gmail.com</td>
                     </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>Afrim</td>
+                        <td>Muqiqi</td>
+                        <td>amuqiqi@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td>Arlind</td>
+                        <td>Pllana</td>
+                        <td>apllana@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td>Artan</td>
+                        <td>Preniqi</td>
+                        <td>apreniqi@gmail.com</td>
+                    </tr>
+                
                 
 
             </table>
         </div>
       </section>
-      <section>
-        <figure class="container-fluid mb-4 mt-4">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="img-fluid w-100 mb-4">
+     
+    </main>
+     <div class="container-fluid">
+        <figure class="mb-4 mt-5">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="img-fluid w-100 mb-4 rounded-4">
         </figure>
-        <figure class="d-flex justify-content-center mb-3 p-4 container-fluid">
+        <figure class="d-flex justify-content-center mb-3 p-4">
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="rounded-circle mb-3 img-fluid">
         </figure>
-      </section>
-      <button class="btn btn-success mb-3 w-100">Always Visible</button>
-      <button class="btn btn-warning mb-4 w-100 d-none d-md-block">Hidden in small screens</button>
-    </main>
+        </div>
+        <div class="container">
+      <button class="btn btn-success mb-5 w-100  ">Always Visible</button>
+      <button class="btn btn-warning mb-5 w-100 d-none d-md-block">Hidden in small screens</button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
 
     </script>
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        // Example starter JavaScript for disabling form submissions if there are invalid fields.
+
+        // I copied and pasted this from boostrap components website.
 (() => {
   'use strict'
 
