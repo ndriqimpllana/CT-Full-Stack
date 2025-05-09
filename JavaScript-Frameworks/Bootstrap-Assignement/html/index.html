@@ -12,8 +12,10 @@
   </head>
   <body>
     <!-- Not required but i did want to have the navigation bar to always show -->
+
     <header style="position: sticky; top: 0; z-index: 1;">
         <!-- I tried to add ARIA labels to a few of the elements to get used to get better at practicing better accesibility for assistive technologies like screen readers-->
+
       <nav id="navigation-bar" class="navbar navbar-expand-md navbar-dark bg-dark px-3 mb-4" aria-label="Main navigation" >
         <div class="container-fluid">
           <a href="#" class="navbar-brand">Bootstrap</a>
@@ -37,8 +39,8 @@
       </nav>
     </header>
     <!-- Learning about navigation bar in bootstrap documentation i saw the scroll responsive navbar and i did like the idea so i implemented it within the page-->
-    <main data-bs-spy="scroll" data-bs-target="#navigation-bar" data-bs-smooth-scroll="true" tabindex="0" class="container p-0" >
-      <section class="mb-5 container col-md-6 p-4" id="welcome" aria-label="Welcome">
+    <main data-bs-spy="scroll" data-bs-target="#navigation-bar" data-bs-smooth-scroll="true" tabindex="0" class="container p-0" aria-label="main content" >
+      <section class="mb-5 container col-md-6" id="welcome" aria-label="Welcome">
         <div class="row p-2 mt-4">
           <div class="d-flex align-items-center text-center">
             <div class="card shadow-lg rounded-2 bg-light border p-5">
@@ -46,8 +48,12 @@
                 This page has been styled with Bootstrap.
               </h1>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, sit dolor corporis fuga error enim, itaque nemo expedita, libero architecto rem earum nam reiciendis! Iure, quas dolorem. Eius, odit maxime!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima est. Tempora accusantium non modi voluptates. Aliquid pariatur error tempore, beatae nobis maiores, rem dolore quod hic, provident laudantium sit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, sit dolor corporis fuga error enim,
+                 itaque nemo expedita, libero architecto rem earum nam reiciendis! Iure, quas dolorem. Eius, odit maxime!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima est. Tempora accusantium non modi 
+                voluptates. Aliquid pariatur error tempore, beatae nobis maiores, rem dolore quod hic, provident laudantium sit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit et voluptate vitae unde quis iste labore 
+                recusandae, deserunt provident similique corrupti cupiditate expedita iusto tempora. Quae dolorum at maxime.
                 <br> <br>
                 <strong>
                     I have added this card simply to showcase the scrollspy type of
@@ -61,7 +67,7 @@
       </section>
       <section id="register-user" class="mb-5">
         <h2>Register</h2>
-        <form class="needs-validation g-3" novalidate>
+        <form class="needs-validation g-3" novalidate aria-label="Reqistration form">
           <div class="row mb-4">
             <div class="col-md-6">
               <label for="firstName" class="form-label">First Name</label>
@@ -103,7 +109,7 @@
         </form>
       </section>
        
-      <section id="our-users">
+      <section id="our-users" aria-label="User data">
         <h2 class="text-center">User Data</h2>
         <div class="table-responsive">
             <table class="table table-striped table-hover">
@@ -171,17 +177,18 @@
       </section>
      
     </main>
-     <div class="container-fluid">
+    <!--Added a container fluid for the images and the buttons to make them responsive and compatible with different screen sizes-->
+    <div class="container-fluid">
         <figure class="mb-4 mt-5">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="img-fluid w-100 mb-4 rounded-4">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class=" img-fluid w-100 mb-4 rounded-4">
         </figure>
         <figure class="d-flex justify-content-center mb-3 p-4">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class="rounded-circle mb-3 img-fluid">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="yosemite national park" class=" img-fluid rounded-circle mb-3">
         </figure>
-        </div>
-        <div class="container">
-      <button class="btn btn-success mb-5 w-100  ">Always Visible</button>
-      <button class="btn btn-warning mb-5 w-100 d-none d-md-block">Hidden in small screens</button>
+    </div>
+    <div class="container">
+        <button class="btn btn-success mb-5 w-100  ">Always Visible</button>
+        <button class="btn btn-warning mb-5 w-100 d-none d-md-block">Hidden in small screens</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
 

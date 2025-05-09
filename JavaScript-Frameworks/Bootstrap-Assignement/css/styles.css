@@ -38,9 +38,9 @@ table {
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.5s ease-in-out; /* color transition */
+    transition: background-color 0.5s ease-in-out; 
   }
-  /* slight hovering effect for the button */
+  
   .btn:hover {
     transform: scale(1.01) ;
   }
