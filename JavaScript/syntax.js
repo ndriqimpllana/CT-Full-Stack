@@ -12,3 +12,11 @@ console.log("true" == true); // ==> false
 console.log(+"100"); // ==> 100
 
 
+console.log(0 == false);
+console.log("" == false);
+console.log(0 === false);
+console.log("" === false);
+
+
+console.log("4" == 4); // ==> If the value is equal
+console.log("4" === 4); // ==> If the data type and the value are equal
