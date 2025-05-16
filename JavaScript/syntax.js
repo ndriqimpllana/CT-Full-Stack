@@ -1,20 +1,14 @@
-// Declare variables
-let income = 2500;
-let sideBusiness = 500;
-let expenses = 1200;
+console.log(typeof 42); // Output: "Number"
+console.log(typeof "Hello World!"); // Output: "String"
+console.log(typeof true); // Output: "boolean"
+console.log(typeof {name: "John", age: 30}); // Output: "Object"
+console.log(typeof [1, 2, 3]); // Output: "object"
+console.log(typeof undefined); // Output: "Undefined"
 
-// Calculate total income nad expenses
 
-let totalIncome = income + sideBusiness;
-let totalExpenses = expenses;
-
-// Calculate net balance
-let netBalance = totalIncome - totalExpenses;
-
-// Output the results to hte console
-
-console.log("Total Income:", totalIncome);
-console.log("Total Expenses:", totalExpenses);
-console.log("Net Balance:", netBalance);
+console.log(5 + "5"); // ==> '55'
+console.log("10" - 5); // ==> 5
+console.log("true" == true); // ==> false
+console.log(+"100"); // ==> 100
 
 
