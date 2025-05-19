@@ -1,23 +1,10 @@
+let temperature = 90;
 
 
-
-let age = 18;
-
-
-if (age >= 18) {
-    console.log('You are and adult.');
-}else {
-    console.log('You are not adult.');
-    }
-
-
-let score = 85;
-
-if (score >= 90) {
-    console.log('Grade: A');
-} else if (score >=75) {
-    console.log('Grade: B');
+if (temperature > 75){
+    console.log("It's a hot day!");
+} else if (temperature > 70) {
+    console.log("It's a beautiful day!");
 } else {
-    console.log("Grade C or lower");
+    console.log("It's cold outside!");
 }
-
