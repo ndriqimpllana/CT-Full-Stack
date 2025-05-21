@@ -20,3 +20,7 @@ console.log(age);
 
 hasVIPPass = true;
 console.log(hasVIPPass);
+
+
+
+
