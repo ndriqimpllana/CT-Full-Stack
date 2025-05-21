@@ -1,10 +1,12 @@
-let temperature = 90;
+let age = 18;
+let hasID = true;
 
-
-if (temperature > 75){
-    console.log("It's a hot day!");
-} else if (temperature > 70) {
-    console.log("It's a beautiful day!");
-} else {
-    console.log("It's cold outside!");
+if (age >= 18) {
+    if(hasID) {
+        console.log("You can enter");
+    } else {
+        console.log("You need ID.");
+    } else {
+        console.log("You are too young to enter.");
+    }
 }
