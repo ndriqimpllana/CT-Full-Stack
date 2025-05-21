@@ -23,4 +23,10 @@ console.log(hasVIPPass);
 
 
 
+let isAdult = true;
+let hasTicket = true;
 
+
+if (isAdult && hasTicket) {
+    console.log("You can enter.");
+}
