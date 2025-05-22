@@ -1,32 +1,55 @@
-let age = 30;
-let hasVIPPass = false;
-
-if (age < 5) {
-    console.log("Free Entry!");
-} else if (age >= 5 && age <= 12) {
-    console.log("Child ticket: $10");
-} else if (age >= 13 && age <= 64) {
-    console.log("Adult Ticket: $20");
-} else {
-    console.log("Senior Ticket: $15");
+function add(a,b) {
+    return a + b;
 }
 
-if (hasVIPPass) {
-    console.log("VIP Access Granted");
+function subtract(a,b) {
+    return a - b;
 }
 
-age = 12 
-console.log(age);
-
-hasVIPPass = true;
-console.log(hasVIPPass);
+function multiply(a,b) {
+    return a * b;
+}
 
 
+function devide(a,b) {
+    if(b === 0) {
+        return 'Error: Devision by zero';
+    }
+    return a / b;
+}
 
-let isAdult = true;
-let hasTicket = true;
+function calculator(num1, num2, operation) {
+    switch(operation) {
+        case "add":
+            return add(num1, num2);
+        case "subtract":
+            return subtract(num1, num2);
+        case "multiply":
+            return multiply(num1, num2);
+        case "devide":
+            return devide(num1, num2);
+        default:
+            return "Invalid Operation";
+    }
+}
 
+console.log(calculator(10, 5, "add"));
+console.log(calculator(10, 0, "devide"));
 
-if (isAdult && hasTicket) {
-    console.log("You can enter.");
+for (let i = 1; i <= 10; i++) {
+    if(i % 2 ){
+        console.log(i + " is an even number.");
+    }
+}
+
+let colors = ['red', 'green', 'blue'];
+
+for(let color of colors) {
+    console.log(color);
+}
+
+let numbers = [10, 20, 30];
+
+for (let index in numbers) {
+  console.log(`Index: ${index}, Value: ${numbers[index]}`);
 }
