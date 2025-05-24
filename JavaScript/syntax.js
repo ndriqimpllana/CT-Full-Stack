@@ -48,3 +48,22 @@ for (let index in numbers2) {
 
 }
 
+
+
+
+
+
+let sentence = "JavaScript is awesome!";
+
+console.log(sentence.toUpperCase());
+
+
+
+let words = sentence.split(" ");
+console.log(words);
+
+let newSentence = sentence.replace("awesome", "powerfull");
+
+console.log(newSentence);
+
+console.log(sentence.includes("JavaScript"));
