@@ -1,38 +1,36 @@
-let age = 16;
-let message = age >= 18 || age >= 16 ? "Access Granted" : "Access Denied";
-console.log(message);
-
-
-let isAdult = true;
-let hasTicket = true;
-
-if(isAdult && hasTicket) {
-    console.log("You can enter.");
+function greetUser(){
+    console.log("Hello, Student!");
 }
 
-let isMember = false;
-let hasCoupon = true;
-
-if(isMember || hasCoupon){
-    console.log("You get a discount!!!");
+function addTwoNumbers(a,b){
+    return a + b;
 }
 
-let isRaining = false;
-
-if(!isRaining){
-    console.log("You can go outside!!!");
+function countToFive(){
+    for(let i = 1; i >=5; i++){
+    console.log(i);
+    }
 }
 
-function alert(alert) {
-    console.log("Hello World!")
+function printArrayElemnets(arr){
+    for (let i = 0; i < arr.length; i++);
+    console.log(arr[i]);
 }
 
-let score = 79;
-
-if (score >= 80){
-    console.log("YOU DID GREAT");
-} else if (score === 70){
-    console.log("You have passed");
-} else {
-    console.log("You alright ??");
+function isEven(num){
+    return num % 2 === 0;
 }
+
+function getPositiveNumbers(numbers){
+    let result = [];
+    for (let i = 0; i < numbers.length; i++);{
+
+
+    if(numbers[i] > 0){
+        result.push(numbers[i]);
+    }
+    
+    }
+    return result;
+}
+

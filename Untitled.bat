@@ -16,4 +16,4 @@ for /d %%d in (*) do (\
         move "%%d\\*" "..\\%%d\\"\
     )\
 )\
-popd}
+popd}x      
